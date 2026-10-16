@@ -1,0 +1,112 @@
+{
+  "clients": [
+    {
+      "org_profile": {
+        "name": "Acme Biotech",
+        "employees": 5,
+        "tech_stack": {
+          "email_and_productivity": "M365 Business Premium",
+          "encryption": "Virtru",
+          "network": "Netgear Nighthawk router",
+          "identity": "Microsoft Entra ID (via M365)",
+          "endpoint_protection": "Microsoft Defender for Business"
+        },
+        "it_staff": "Jane Smith (owner/IT admin)"
+      },
+      "controls": {
+        "3.1.1": {
+          "status": "MET",
+          "narrative": "Acme Biotech limits system access to authorized users through Microsoft 365 Business Premium and Entra ID. Jane Smith, as the sole IT administrator, provisions and deprovisions all user accounts directly in the Microsoft 365 admin center. Conditional Access policies in Entra ID restrict sign-ins to compliant devices and approved locations. The Netgear Nighthawk router is configured with a separate VLAN for guest traffic, ensuring visitors cannot reach internal resources. Access reviews are performed monthly by Jane Smith using the M365 admin portal to verify that only current employees retain active accounts."
+        },
+        "3.5.3": {
+          "status": "MET",
+          "narrative": "Acme Biotech enforces multi-factor authentication for all users via Entra ID MFA, which is enabled tenant-wide through M365 Business Premium Security Defaults. Every employee must register the Microsoft Authenticator app during onboarding. Jane Smith verifies MFA enrollment status monthly through the Entra ID admin portal. Local network access to the Netgear Nighthawk management interface requires a separate administrator credential stored in a hardware token. No user can access CUI-bearing systems without completing the MFA challenge."
+        },
+        "3.13.11": {
+          "status": "MET",
+          "narrative": "Acme Biotech employs Virtru end-to-end encryption for all email communications containing CUI. Virtru integrates directly with the Microsoft 365 Outlook client, enabling policy-based encryption that triggers automatically when messages are tagged as containing controlled information. Data at rest in SharePoint Online and OneDrive is protected by Microsoft-managed encryption keys via the M365 platform. Jane Smith configures Virtru DLP rules to prevent unencrypted transmission of files matching CUI patterns. TLS 1.2 or higher is enforced on the Netgear Nighthawk router for all outbound web traffic."
+        },
+        "3.3.1": {
+          "status": "MET",
+          "narrative": "Acme Biotech creates and retains audit logs using the Microsoft 365 Unified Audit Log. All user sign-in events, file access, and mailbox activities are captured automatically by the M365 compliance center. Jane Smith reviews the audit dashboard weekly and exports logs to a dedicated SharePoint document library for long-term retention. The Netgear Nighthawk router logs all inbound and outbound connection attempts, which Jane Smith downloads monthly to a local encrypted USB drive. Audit log retention is set to one year in the M365 admin center, exceeding the minimum CMMC requirement."
+        },
+        "3.14.1": {
+          "status": "MET",
+          "narrative": "Acme Biotech identifies and corrects system flaws using Microsoft Defender for Business, included with M365 Business Premium. Defender automatically scans all endpoints for vulnerabilities and pushes security updates via Windows Update for Business. Jane Smith reviews the Microsoft 365 Defender portal daily for new advisories and confirms patch compliance across all five workstations. Virtru client updates are managed through the M365 app deployment pipeline. The Netgear Nighthawk router firmware is checked monthly against the vendor's published release notes, and Jane Smith applies updates during scheduled maintenance windows."
+        }
+      }
+    },
+    {
+      "org_profile": {
+        "name": "Atlas Manufacturing",
+        "employees": 40,
+        "tech_stack": {
+          "identity": "On-premises Active Directory (Windows Server 2022)",
+          "network_switching": "Cisco Meraki MS switches",
+          "firewall": "Palo Alto PA-440",
+          "endpoint_protection": "CrowdStrike Falcon Go",
+          "file_server": "Windows Server 2022 file shares with NTFS permissions"
+        },
+        "it_staff": "IT Director + 2 system administrators"
+      },
+      "controls": {
+        "3.1.1": {
+          "status": "MET",
+          "narrative": "Atlas Manufacturing limits information system access to authorized users through on-premises Active Directory Group Policy Objects. The IT Director maintains a role-based access control matrix mapping each of the 40 employees to AD security groups aligned with job function. GPO-enforced logon restrictions prevent users from authenticating to workstations outside their assigned department. The Palo Alto PA-440 firewall applies user-identity-based policies through User-ID integration with Active Directory, restricting CUI-bearing network segments to authorized personnel only. Cisco Meraki MS switches enforce 802.1X port-based authentication, ensuring that only domain-joined devices receive network access. Account provisioning and deprovisioning follow a documented onboarding/offboarding checklist managed by the IT Director."
+        },
+        "3.5.3": {
+          "status": "MET",
+          "narrative": "Atlas Manufacturing enforces multi-factor authentication using Duo Security integrated with Active Directory. All 40 users must complete a Duo Push verification when authenticating to domain-joined workstations and VPN connections through the Palo Alto PA-440 GlobalProtect client. The IT Director configures Duo policies to require MFA for all interactive logons to systems processing CUI. Privileged accounts used by the two system administrators require hardware YubiKey tokens in addition to Duo Push. The Palo Alto PA-440 management interface is restricted to certificate-based authentication from the IT management VLAN. GPO settings prevent credential caching on shared workstations in the manufacturing floor."
+        },
+        "3.13.11": {
+          "status": "MET",
+          "narrative": "Atlas Manufacturing employs FIPS-validated cryptographic mechanisms to protect CUI confidentiality. The Palo Alto PA-440 firewall terminates all site-to-site and remote-access VPN tunnels using IKEv2 with AES-256-GCM, protecting CUI in transit between the main facility and remote offices. Windows Server 2022 file shares use SMB 3.1.1 encryption enforced via GPO for all connections to CUI-designated shares. BitLocker drive encryption with TPM 2.0 is deployed on all workstations and the file server through Active Directory GPO, protecting CUI at rest. Cisco Meraki switches enforce MACsec (802.1AE) on trunk ports connecting CUI network segments. The IT Director reviews cryptographic configuration quarterly using automated compliance reports from the Palo Alto Panorama dashboard."
+        },
+        "3.3.1": {
+          "status": "MET",
+          "narrative": "Atlas Manufacturing creates and retains system audit logs through a centralized Windows Event Forwarding architecture. All domain-joined workstations and servers forward security events to a dedicated Windows Event Collector server configured via Active Directory GPO. The Palo Alto PA-440 streams Threat, Traffic, and System logs to an on-premises syslog server with 400 days of retained storage. Cisco Meraki MS switches transmit syslog data to the same collector, capturing all port authentication and VLAN assignment events. The two system administrators review consolidated log dashboards weekly, and the IT Director conducts a monthly audit log integrity check. Audit policies defined in GPO capture logon/logoff, object access, privilege use, and policy change events across all systems in the CUI boundary."
+        },
+        "3.14.1": {
+          "status": "MET",
+          "narrative": "Atlas Manufacturing identifies, reports, and corrects information system flaws using a structured patch management process. The IT Director approves patches via Windows Server Update Services, and GPOs enforce a 72-hour deployment window for critical security updates across all domain-joined systems. CrowdStrike Falcon Go provides real-time vulnerability assessment on all 40 endpoints, and the two system administrators triage Falcon alerts daily. The Palo Alto PA-440 runs Threat Prevention subscription with automatic signature updates applied nightly. Cisco Meraki MS switch firmware is managed through the Meraki cloud dashboard, with automatic updates enabled and validated by the IT team within 48 hours. A quarterly vulnerability scan using Nessus validates that all systems within the CUI boundary are patched to current baselines."
+        }
+      }
+    },
+    {
+      "org_profile": {
+        "name": "Nimbus Software",
+        "employees": 10,
+        "tech_stack": {
+          "cloud_infrastructure": "AWS GovCloud (US-West)",
+          "identity": "Okta SSO with Universal Directory",
+          "endpoint_protection": "CrowdStrike Falcon",
+          "source_control": "GitHub Enterprise Cloud",
+          "monitoring": "AWS CloudTrail, CloudWatch, GuardDuty"
+        },
+        "it_staff": "1 DevOps engineer"
+      },
+      "controls": {
+        "3.1.1": {
+          "status": "MET",
+          "narrative": "Nimbus Software limits information system access to authorized users through Okta SSO with Universal Directory as the authoritative identity provider. All 10 employees authenticate through Okta before accessing any AWS GovCloud resource or SaaS application. The DevOps engineer configures Okta application assignments to enforce least-privilege access, mapping each user to IAM roles in AWS GovCloud based on job function. AWS IAM policies restrict access to CUI-bearing S3 buckets and EC2 instances to only those roles assigned through Okta SAML federation. Security groups and NACLs in the GovCloud VPC further restrict network-level access to authorized CIDR ranges. Okta lifecycle management automatically deprovisions access across all integrated applications when an employee is terminated."
+        },
+        "3.5.3": {
+          "status": "MET",
+          "narrative": "Nimbus Software enforces multi-factor authentication for all users through Okta Verify with number matching. Every employee must enroll in Okta Verify during onboarding, and the DevOps engineer configures an Okta authentication policy requiring MFA for all application sign-ons. AWS GovCloud console access requires SAML assertion from Okta, which inherently enforces the MFA requirement before any IAM role assumption. The DevOps engineer's AWS root account uses a dedicated hardware FIDO2 key stored in a fireproof safe. CrowdStrike Falcon console access is federated through Okta SSO, ensuring the same MFA policy applies to endpoint management. Okta system logs capture all MFA challenge and response events for audit purposes."
+        },
+        "3.13.11": {
+          "status": "MET",
+          "narrative": "Nimbus Software employs FIPS 140-2 validated cryptographic mechanisms provided by AWS GovCloud to protect CUI confidentiality. All S3 buckets storing CUI use server-side encryption with AWS KMS customer-managed keys (SSE-KMS) configured in the GovCloud region. Data in transit is protected by TLS 1.2 enforced at the Application Load Balancer and API Gateway levels. The DevOps engineer configures VPC flow logs and ensures all inter-service communication within GovCloud uses encrypted channels. CrowdStrike Falcon agent-to-cloud communication uses TLS 1.2 with certificate pinning. Okta transmits all SAML assertions and API calls over TLS 1.3. AWS CloudTrail logs all KMS key usage events, and the DevOps engineer reviews key rotation compliance monthly through AWS Config rules."
+        },
+        "3.3.1": {
+          "status": "MET",
+          "narrative": "Nimbus Software creates and retains audit logs using AWS CloudTrail and CloudWatch Logs within GovCloud. CloudTrail is enabled in all GovCloud regions with multi-region trail configuration, capturing every API call made to AWS services. CloudWatch Logs aggregates application-level logs from EC2 instances and Lambda functions via the CloudWatch agent. The DevOps engineer configures log retention policies to retain all audit data for 365 days in S3 with Glacier transition after 90 days. AWS GuardDuty analyzes CloudTrail and VPC flow log data continuously for anomalous access patterns. Okta system logs are exported nightly to the GovCloud S3 audit bucket via Okta Log Streaming. CrowdStrike Falcon detection and audit events are retained in the Falcon cloud for one year and exported weekly to the same S3 bucket for consolidated analysis."
+        },
+        "3.14.1": {
+          "status": "MET",
+          "narrative": "Nimbus Software identifies, reports, and corrects system flaws through automated vulnerability management in AWS GovCloud. The DevOps engineer configures AWS Systems Manager Patch Manager to scan and remediate EC2 instances on a daily schedule, with critical patches applied within 48 hours. CrowdStrike Falcon Spotlight provides continuous vulnerability assessment across all 10 endpoints, and the DevOps engineer triages Falcon vulnerability alerts each morning. AWS Inspector scans container images in ECR for known CVEs before deployment. GuardDuty findings trigger SNS notifications to the DevOps engineer's on-call channel for immediate triage. Okta agents and CrowdStrike Falcon sensors auto-update through their respective cloud management consoles. GitHub Dependabot alerts are configured on all repositories to flag vulnerable dependencies, with the DevOps engineer reviewing and merging patches within the sprint cycle."
+        }
+      }
+    }
+  ]
+}

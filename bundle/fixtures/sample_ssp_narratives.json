@@ -1,0 +1,41 @@
+{
+  "_comment": "Synthetic SSP narratives — mix of good, bad, and ugly for testing. Includes deliberate errors: future tense, missing evidence, generic roles, NIST copy-paste.",
+  "narratives": [
+    {
+      "control_id": "3.1.1",
+      "status": "MET",
+      "narrative": "#### AC.L2-3.1.1 — Authorized Access Control\n\n| Field | Value |\n|-------|-------|\n| Status | MET |\n| Origination | Internal |\n| Responsible | Jane Smith |\n| SPRS Weight | 5 |\n| POA&M Eligible | No |\n\n**Who:** Jane Smith, IT Administrator, manages access for all CUI systems.\n\n**What:** Google Workspace admin console enforces role-based access. Three access tiers: Admin (Jane only), CUI Users (3 researchers), Read-Only (1 project manager). Access requests require email approval from Jane + CEO sign-off for CUI access.\n\n**When/How Often:** Access reviewed quarterly. Last review: 2026-02-15. Next review: 2026-05-15. Terminated employees removed same business day per HR checklist.\n\n**How:** Google Workspace Admin → Directory → Users → Organizational Units. CUI OU has restricted sharing, DLP rules, and forced 2SV. Non-CUI OU has standard permissions.\n\n**Evidence:** E-AC-001: Google Workspace OU screenshot (2026-02-15). E-AC-002: Access review log Q1 2026 (2026-02-15). E-AC-003: Termination checklist template.",
+      "nist_requirement": "Limit information system access to authorized users, processes acting on behalf of authorized users, or devices (including other information systems)."
+    },
+    {
+      "control_id": "3.5.3",
+      "status": "MET",
+      "narrative": "#### IA.L2-3.5.3 — Multifactor Authentication\n\n| Field | Value |\n|-------|-------|\n| Status | MET |\n\n**Who:** Jane Smith, IT Administrator.\n\n**What:** Google Workspace 2-Step Verification enforced org-wide. Admin accounts: FIDO2 hardware keys (YubiKey 5). Standard users: Google Authenticator TOTP.\n\n**When/How Often:** MFA enrollment verified monthly via Admin Console compliance report. Last check: 2026-03-01.\n\n**How:** Google Admin → Security → 2-Step Verification → Enforcement: On. New employees enrolled during onboarding (Day 1 IT setup). MFA bypass not permitted for any account.\n\n**Evidence:** E-IA-001: 2SV enforcement screenshot (2026-03-01). E-IA-002: MFA compliance report showing 100% enrollment (2026-03-01).",
+      "nist_requirement": "Use multifactor authentication for local and network access to privileged accounts and for network access to non-privileged accounts."
+    },
+    {
+      "control_id": "3.3.1",
+      "status": "MET",
+      "narrative": "We will implement centralized audit logging using a SIEM solution. The organization plans to deploy Blumira in Q3 2026 to address audit requirements. Once implemented, all CUI system events will be captured and retained for 12 months.",
+      "nist_requirement": "Create and retain system audit logs and records to the extent needed to enable the monitoring, analysis, investigation, and reporting of unlawful or unauthorized system activity."
+    },
+    {
+      "control_id": "3.6.1",
+      "status": "MET",
+      "narrative": "The organization establishes an operational incident-handling capability for organizational systems that includes preparation, detection, analysis, containment, recovery, and user response activities. The organization tracks, documents, and reports incidents to designated organizational officials and/or authorities.",
+      "nist_requirement": "Establish an operational incident-handling capability for organizational systems that includes preparation, detection, analysis, containment, recovery, and user response activities."
+    },
+    {
+      "control_id": "3.10.1",
+      "status": "MET",
+      "narrative": "#### PE.L2-3.10.1 — Physical Access\n\n| Field | Value |\n|-------|-------|\n| Status | MET |\n\n**Who:** Dr. Priya Raman, CEO, controls physical access to the lab and office.\n\n**What:** Single office/lab space at 123 Innovation Drive, Suite 200. Keycard entry (Kisi system) with individual cards for each employee. Visitor log maintained at front desk.\n\n**When/How Often:** Access logs reviewed monthly. Keycard deactivation within 4 hours of termination. Last review: 2026-03-01.\n\n**How:** Kisi cloud dashboard manages card provisioning. Access restricted to business hours (7am-7pm) for standard users. After-hours access requires CEO approval.\n\n**Evidence:** E-PE-001: Kisi access log export (2026-03-01). E-PE-002: Visitor log sample (2026-02-28).",
+      "nist_requirement": "Limit physical access to organizational systems, equipment, and the respective operating environments to authorized individuals."
+    },
+    {
+      "control_id": "3.8.1",
+      "status": "N/A",
+      "narrative": "Not applicable.",
+      "nist_requirement": "Protect (i.e., physically control and securely store) system media containing CUI, both paper and digital."
+    }
+  ]
+}

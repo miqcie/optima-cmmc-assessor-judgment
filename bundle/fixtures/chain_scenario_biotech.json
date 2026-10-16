@@ -1,0 +1,972 @@
+{
+  "_comment": "End-to-end chain test: 5-person biotech company. SPRS=67 (43 deductions). POA&M deductions=22. Score without POA&M=89.",
+  "discovery": {
+    "org_profile": {
+      "company": "Helios BioSystems",
+      "industry": "Biotechnology",
+      "employees": 5,
+      "cui_types": [
+        "Technical Data",
+        "Export Controlled"
+      ],
+      "it_environment": {
+        "email": "Microsoft 365 Business Premium",
+        "encryption": "Virtru for email encryption",
+        "router": "Netgear Nighthawk consumer router",
+        "endpoints": "3 Windows 11 Pro laptops, 1 MacBook Pro",
+        "cloud": "Azure AD + OneDrive for Business",
+        "backup": "OneDrive cloud sync"
+      }
+    },
+    "intake_answers": {
+      "cui_boundary": "Office network and 4 endpoints; no on-prem servers",
+      "remote_access": "VPN via Microsoft 365 built-in; all employees remote-capable",
+      "mfa_status": "MFA enabled for M365 via Authenticator app for remote/privileged access, not yet enforced for all local network access",
+      "encryption_at_rest": "Virtru for email; BitLocker on Windows laptops; FileVault on Mac",
+      "incident_response_plan": "No formal IR plan documented",
+      "vulnerability_scanning": "None",
+      "physical_security": "Shared office suite with keycard entry (building-level); no dedicated server room",
+      "mobile_device_policy": "No MDM solution; personal phones used for MFA only"
+    }
+  },
+  "gap_assessment": {
+    "assessment_date": "2026-05-15",
+    "stated_sprs_score": 67,
+    "controls": [
+      {
+        "control_id": "3.1.1",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.1.2",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.1.3",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.1.4",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.1.5",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.1.6",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.1.7",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.1.8",
+        "status": "NOT MET",
+        "gap_type": "configuration"
+      },
+      {
+        "control_id": "3.1.9",
+        "status": "NOT MET",
+        "gap_type": "documentation"
+      },
+      {
+        "control_id": "3.1.10",
+        "status": "NOT MET",
+        "gap_type": "configuration"
+      },
+      {
+        "control_id": "3.1.11",
+        "status": "NOT MET",
+        "gap_type": "configuration"
+      },
+      {
+        "control_id": "3.1.12",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.1.13",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.1.14",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.1.15",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.1.16",
+        "status": "INSUFFICIENT INFO",
+        "gap_type": null,
+        "follow_up": "Does the Netgear router enforce WPA3-Enterprise or WPA2-Enterprise?"
+      },
+      {
+        "control_id": "3.1.17",
+        "status": "INSUFFICIENT INFO",
+        "gap_type": null,
+        "follow_up": "What authentication/encryption is used for wireless connections?"
+      },
+      {
+        "control_id": "3.1.18",
+        "status": "NOT MET",
+        "gap_type": "implementation"
+      },
+      {
+        "control_id": "3.1.19",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.1.20",
+        "status": "NOT MET",
+        "gap_type": "configuration"
+      },
+      {
+        "control_id": "3.1.21",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.1.22",
+        "status": "NOT MET",
+        "gap_type": "documentation"
+      },
+      {
+        "control_id": "3.2.1",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.2.2",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.2.3",
+        "status": "NOT MET",
+        "gap_type": "documentation"
+      },
+      {
+        "control_id": "3.3.1",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.3.2",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.3.3",
+        "status": "NOT MET",
+        "gap_type": "configuration"
+      },
+      {
+        "control_id": "3.3.4",
+        "status": "NOT MET",
+        "gap_type": "configuration"
+      },
+      {
+        "control_id": "3.3.5",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.3.6",
+        "status": "NOT MET",
+        "gap_type": "implementation"
+      },
+      {
+        "control_id": "3.3.7",
+        "status": "NOT MET",
+        "gap_type": "configuration"
+      },
+      {
+        "control_id": "3.3.8",
+        "status": "NOT MET",
+        "gap_type": "configuration"
+      },
+      {
+        "control_id": "3.3.9",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.4.1",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.4.2",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.4.3",
+        "status": "NOT MET",
+        "gap_type": "documentation"
+      },
+      {
+        "control_id": "3.4.4",
+        "status": "NOT MET",
+        "gap_type": "documentation"
+      },
+      {
+        "control_id": "3.4.5",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.4.6",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.4.7",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.4.8",
+        "status": "INSUFFICIENT INFO",
+        "gap_type": null,
+        "follow_up": "Is application execution restricted via allowlisting on CUI workstations?"
+      },
+      {
+        "control_id": "3.4.9",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.5.1",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.5.2",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.5.3",
+        "status": "PARTIAL",
+        "gap_type": "configuration"
+      },
+      {
+        "control_id": "3.5.4",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.5.5",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.5.6",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.5.7",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.5.8",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.5.9",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.5.10",
+        "status": "INSUFFICIENT INFO",
+        "gap_type": null,
+        "follow_up": "Is cryptographic key-based authentication used for any network devices?"
+      },
+      {
+        "control_id": "3.5.11",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.6.1",
+        "status": "NOT MET",
+        "gap_type": "documentation"
+      },
+      {
+        "control_id": "3.6.2",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.6.3",
+        "status": "NOT MET",
+        "gap_type": "documentation"
+      },
+      {
+        "control_id": "3.7.1",
+        "status": "NOT MET",
+        "gap_type": "documentation"
+      },
+      {
+        "control_id": "3.7.2",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.7.3",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.7.4",
+        "status": "INSUFFICIENT INFO",
+        "gap_type": null,
+        "follow_up": "Are diagnostic/maintenance media scanned before use on CUI systems?"
+      },
+      {
+        "control_id": "3.7.5",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.7.6",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.8.1",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.8.2",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.8.3",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.8.4",
+        "status": "NOT MET",
+        "gap_type": "documentation"
+      },
+      {
+        "control_id": "3.8.5",
+        "status": "NOT MET",
+        "gap_type": "documentation"
+      },
+      {
+        "control_id": "3.8.6",
+        "status": "NOT MET",
+        "gap_type": "implementation"
+      },
+      {
+        "control_id": "3.8.7",
+        "status": "INSUFFICIENT INFO",
+        "gap_type": null,
+        "follow_up": "Is removable media use controlled via policy or technical restriction?"
+      },
+      {
+        "control_id": "3.8.8",
+        "status": "INSUFFICIENT INFO",
+        "gap_type": null,
+        "follow_up": "Is media shared with external parties sanitized or encrypted?"
+      },
+      {
+        "control_id": "3.8.9",
+        "status": "NOT MET",
+        "gap_type": "configuration"
+      },
+      {
+        "control_id": "3.9.1",
+        "status": "INSUFFICIENT INFO",
+        "gap_type": null,
+        "follow_up": "Are personnel screened prior to CUI access?"
+      },
+      {
+        "control_id": "3.9.2",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.10.1",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.10.2",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.10.3",
+        "status": "NOT MET",
+        "gap_type": "documentation"
+      },
+      {
+        "control_id": "3.10.4",
+        "status": "NOT MET",
+        "gap_type": "configuration"
+      },
+      {
+        "control_id": "3.10.5",
+        "status": "NOT MET",
+        "gap_type": "configuration"
+      },
+      {
+        "control_id": "3.10.6",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.11.1",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.11.2",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.11.3",
+        "status": "NOT MET",
+        "gap_type": "implementation"
+      },
+      {
+        "control_id": "3.12.1",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.12.2",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.12.3",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.12.4",
+        "status": "NOT MET",
+        "gap_type": "documentation"
+      },
+      {
+        "control_id": "3.13.1",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.13.2",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.13.3",
+        "status": "NOT MET",
+        "gap_type": "configuration"
+      },
+      {
+        "control_id": "3.13.4",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.13.5",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.13.6",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.13.7",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.13.8",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.13.9",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.13.10",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.13.11",
+        "status": "PARTIAL",
+        "gap_type": "configuration"
+      },
+      {
+        "control_id": "3.13.12",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.13.13",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.13.14",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.13.15",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.13.16",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.14.1",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.14.2",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.14.3",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.14.4",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.14.5",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.14.6",
+        "status": "MET",
+        "gap_type": null
+      },
+      {
+        "control_id": "3.14.7",
+        "status": "INSUFFICIENT INFO",
+        "gap_type": null,
+        "follow_up": "Is there a process to identify unauthorized use of information systems?"
+      }
+    ]
+  },
+  "poam_entries": [
+    {
+      "poam_id": "POAM-001",
+      "control_id": "3.1.8",
+      "status": "NOT MET",
+      "weakness": "No account lockout policy configured",
+      "current_state": "Windows workstations allow unlimited login attempts; no lockout policy in Azure AD Conditional Access",
+      "target_state": "Account lockout after 5 failed attempts with 15-minute lockout via Azure AD Conditional Access",
+      "tasks": "Configure Azure AD smart lockout: threshold=5, duration=15min; test with non-admin account; update SSP",
+      "resources": "IT Administrator (Sarah Chen) - estimated 4-8 hours. No additional licensing required.",
+      "milestones": "Implementation by 2026-07-08; verification within 7 days; SSP updated within 14 days",
+      "completion_date": "2026-07-08",
+      "responsible": "Sarah Chen, IT Administrator"
+    },
+    {
+      "poam_id": "POAM-002",
+      "control_id": "3.1.9",
+      "status": "NOT MET",
+      "weakness": "No login banner or privacy notice displayed",
+      "current_state": "No system use notification displayed at login on any endpoint or M365 portal",
+      "target_state": "Login banner with DoD-approved notice on all endpoints and M365 tenant",
+      "tasks": "Create GPO for Windows login banner; configure M365 tenant Terms of Use; test on all endpoints",
+      "resources": "IT Administrator (Sarah Chen) - estimated 4-8 hours. No additional licensing required.",
+      "milestones": "Implementation by 2026-07-15; verification within 7 days; SSP updated within 14 days",
+      "completion_date": "2026-07-15",
+      "responsible": "Sarah Chen, IT Administrator"
+    },
+    {
+      "poam_id": "POAM-003",
+      "control_id": "3.1.10",
+      "status": "NOT MET",
+      "weakness": "No automatic session lock configured",
+      "current_state": "Workstations rely on user-initiated screen lock; no GPO enforcing idle timeout",
+      "target_state": "Automatic screen lock after 15 minutes of inactivity on all CUI endpoints",
+      "tasks": "Configure GPO: ScreenSaverTimeout=900, ScreenSaverIsSecure=1; apply to all endpoints; verify",
+      "resources": "IT Administrator (Sarah Chen) - estimated 4-8 hours. No additional licensing required.",
+      "milestones": "Implementation by 2026-07-22; verification within 7 days; SSP updated within 14 days",
+      "completion_date": "2026-07-22",
+      "responsible": "Sarah Chen, IT Administrator"
+    },
+    {
+      "poam_id": "POAM-004",
+      "control_id": "3.1.11",
+      "status": "NOT MET",
+      "weakness": "No automatic session termination",
+      "current_state": "Remote M365 sessions persist indefinitely; no idle timeout configured",
+      "target_state": "Automatic session termination after 30 minutes idle for M365 web sessions",
+      "tasks": "Configure Azure AD Conditional Access: sign-in frequency=30min for CUI apps; test",
+      "resources": "IT Administrator (Sarah Chen) - estimated 4-8 hours. No additional licensing required.",
+      "milestones": "Implementation by 2026-07-29; verification within 7 days; SSP updated within 14 days",
+      "completion_date": "2026-07-29",
+      "responsible": "Sarah Chen, IT Administrator"
+    },
+    {
+      "poam_id": "POAM-005",
+      "control_id": "3.2.3",
+      "status": "NOT MET",
+      "weakness": "No insider threat awareness training",
+      "current_state": "Annual security training covers phishing but not insider threats",
+      "target_state": "Annual insider threat awareness briefing for all CUI-authorized personnel",
+      "tasks": "Develop insider threat awareness module; schedule annual training; document completion",
+      "resources": "IT Administrator (Sarah Chen) - estimated 4-8 hours. No additional licensing required.",
+      "milestones": "Implementation by 2026-08-05; verification within 7 days; SSP updated within 14 days",
+      "completion_date": "2026-08-05",
+      "responsible": "Sarah Chen, IT Administrator"
+    },
+    {
+      "poam_id": "POAM-006",
+      "control_id": "3.3.3",
+      "status": "NOT MET",
+      "weakness": "No systematic event log review",
+      "current_state": "M365 audit logs exist but are never reviewed; no alerting configured",
+      "target_state": "Weekly review of M365 Unified Audit Log with documented findings",
+      "tasks": "Configure M365 alert policies for suspicious activity; establish weekly review schedule; document in SSP",
+      "resources": "IT Administrator (Sarah Chen) - estimated 4-8 hours. No additional licensing required.",
+      "milestones": "Implementation by 2026-08-12; verification within 7 days; SSP updated within 14 days",
+      "completion_date": "2026-08-12",
+      "responsible": "Sarah Chen, IT Administrator"
+    },
+    {
+      "poam_id": "POAM-007",
+      "control_id": "3.3.4",
+      "status": "NOT MET",
+      "weakness": "No audit failure alerting mechanism",
+      "current_state": "No alerts configured when audit logging fails or is disabled",
+      "target_state": "Automated alerts when M365 audit logging is disrupted or tampered with",
+      "tasks": "Configure M365 Compliance Center alerts for audit log failures; designate recipient; test alert flow",
+      "resources": "IT Administrator (Sarah Chen) - estimated 4-8 hours. No additional licensing required.",
+      "milestones": "Implementation by 2026-08-19; verification within 7 days; SSP updated within 14 days",
+      "completion_date": "2026-08-19",
+      "responsible": "Sarah Chen, IT Administrator"
+    },
+    {
+      "poam_id": "POAM-008",
+      "control_id": "3.3.6",
+      "status": "NOT MET",
+      "weakness": "No log reduction or reporting capability",
+      "current_state": "Raw M365 audit logs are available but no reduction, summary, or reporting is performed",
+      "target_state": "Monthly audit log summary reports generated from M365 Compliance Center",
+      "tasks": "Create Power Automate flow for monthly audit summary; establish report template; assign reviewer",
+      "resources": "IT Administrator (Sarah Chen) - estimated 4-8 hours. No additional licensing required.",
+      "milestones": "Implementation by 2026-08-26; verification within 7 days; SSP updated within 14 days",
+      "completion_date": "2026-08-26",
+      "responsible": "Sarah Chen, IT Administrator"
+    },
+    {
+      "poam_id": "POAM-009",
+      "control_id": "3.3.7",
+      "status": "NOT MET",
+      "weakness": "System clocks not synchronized to authoritative source",
+      "current_state": "Windows endpoints use default NTP (time.windows.com) but no policy enforces it",
+      "target_state": "GPO enforcing NTP sync to time.nist.gov on all CUI workstations",
+      "tasks": "Configure GPO: NtpServer=time.nist.gov; apply to all endpoints; verify sync status",
+      "resources": "IT Administrator (Sarah Chen) - estimated 4-8 hours. No additional licensing required.",
+      "milestones": "Implementation by 2026-09-02; verification within 7 days; SSP updated within 14 days",
+      "completion_date": "2026-09-02",
+      "responsible": "Sarah Chen, IT Administrator"
+    },
+    {
+      "poam_id": "POAM-010",
+      "control_id": "3.3.8",
+      "status": "NOT MET",
+      "weakness": "Audit logs not protected from modification",
+      "current_state": "M365 audit logs are cloud-managed but no immutability or export-to-WORM configured",
+      "target_state": "M365 audit logs exported to immutable Azure Blob Storage with legal hold",
+      "tasks": "Enable M365 audit log export to Azure Blob; configure immutability policy; test retention",
+      "resources": "IT Administrator (Sarah Chen) - estimated 4-8 hours. No additional licensing required.",
+      "milestones": "Implementation by 2026-09-09; verification within 7 days; SSP updated within 14 days",
+      "completion_date": "2026-09-09",
+      "responsible": "Sarah Chen, IT Administrator"
+    },
+    {
+      "poam_id": "POAM-011",
+      "control_id": "3.4.3",
+      "status": "NOT MET",
+      "weakness": "No formal change management process",
+      "current_state": "System changes are made ad hoc without documentation or approval",
+      "target_state": "Documented change management process with approval workflow for CUI systems",
+      "tasks": "Create change request template; establish approval chain; document in SSP CM section",
+      "resources": "IT Administrator (Sarah Chen) - estimated 4-8 hours. No additional licensing required.",
+      "milestones": "Implementation by 2026-09-16; verification within 7 days; SSP updated within 14 days",
+      "completion_date": "2026-09-16",
+      "responsible": "Sarah Chen, IT Administrator"
+    },
+    {
+      "poam_id": "POAM-012",
+      "control_id": "3.4.4",
+      "status": "NOT MET",
+      "weakness": "No security impact analysis for changes",
+      "current_state": "Changes to CUI systems are not assessed for security impact before implementation",
+      "target_state": "Security impact analysis required for all changes to CUI boundary systems",
+      "tasks": "Develop security impact analysis checklist; integrate into change management process; train staff",
+      "resources": "IT Administrator (Sarah Chen) - estimated 4-8 hours. No additional licensing required.",
+      "milestones": "Implementation by 2026-09-23; verification within 7 days; SSP updated within 14 days",
+      "completion_date": "2026-09-23",
+      "responsible": "Sarah Chen, IT Administrator"
+    },
+    {
+      "poam_id": "POAM-013",
+      "control_id": "3.6.3",
+      "status": "NOT MET",
+      "weakness": "No incident response testing performed",
+      "current_state": "IR plan (once documented) has never been tested via tabletop or simulation",
+      "target_state": "Annual tabletop IR exercise with documented lessons learned",
+      "tasks": "Schedule tabletop exercise; develop scenario; conduct exercise; document findings",
+      "resources": "IT Administrator (Sarah Chen) - estimated 4-8 hours. No additional licensing required.",
+      "milestones": "Implementation by 2026-09-30; verification within 7 days; SSP updated within 14 days",
+      "completion_date": "2026-09-30",
+      "responsible": "Sarah Chen, IT Administrator"
+    },
+    {
+      "poam_id": "POAM-014",
+      "control_id": "3.8.4",
+      "status": "NOT MET",
+      "weakness": "CUI media not marked",
+      "current_state": "USB drives and printed documents containing CUI are not marked with distribution statements",
+      "target_state": "CUI marking on all media per NARA CUI Registry requirements",
+      "tasks": "Procure CUI labels; create digital CUI header/footer template; train staff on marking requirements",
+      "resources": "IT Administrator (Sarah Chen) - estimated 4-8 hours. No additional licensing required.",
+      "milestones": "Implementation by 2026-10-07; verification within 7 days; SSP updated within 14 days",
+      "completion_date": "2026-10-07",
+      "responsible": "Sarah Chen, IT Administrator"
+    },
+    {
+      "poam_id": "POAM-015",
+      "control_id": "3.8.5",
+      "status": "NOT MET",
+      "weakness": "No media accountability tracking",
+      "current_state": "No inventory of removable media that has contained CUI",
+      "target_state": "Media inventory log tracking all removable media used with CUI systems",
+      "tasks": "Create media inventory spreadsheet; register existing USB drives; establish check-in/check-out process",
+      "resources": "IT Administrator (Sarah Chen) - estimated 4-8 hours. No additional licensing required.",
+      "milestones": "Implementation by 2026-10-14; verification within 7 days; SSP updated within 14 days",
+      "completion_date": "2026-10-14",
+      "responsible": "Sarah Chen, IT Administrator"
+    },
+    {
+      "poam_id": "POAM-016",
+      "control_id": "3.8.6",
+      "status": "NOT MET",
+      "weakness": "Portable storage not encrypted",
+      "current_state": "USB drives used for data transfer are not hardware-encrypted",
+      "target_state": "All portable storage used with CUI must be hardware-encrypted (FIPS 140-2)",
+      "tasks": "Procure IronKey D300S drives; disable non-encrypted USB via GPO; update acceptable use policy",
+      "resources": "IT Administrator (Sarah Chen) - estimated 4-8 hours. No additional licensing required.",
+      "milestones": "Implementation by 2026-10-21; verification within 7 days; SSP updated within 14 days",
+      "completion_date": "2026-10-21",
+      "responsible": "Sarah Chen, IT Administrator"
+    },
+    {
+      "poam_id": "POAM-017",
+      "control_id": "3.8.9",
+      "status": "NOT MET",
+      "weakness": "Backups not independently protected",
+      "current_state": "OneDrive sync serves as backup but no separate backup protection or encryption",
+      "target_state": "CUI backups encrypted and stored in separate Azure Blob container with restricted access",
+      "tasks": "Configure Azure Backup for CUI data; enable encryption; restrict access to IT admin; test restore",
+      "resources": "IT Administrator (Sarah Chen) - estimated 4-8 hours. No additional licensing required.",
+      "milestones": "Implementation by 2026-10-28; verification within 7 days; SSP updated within 14 days",
+      "completion_date": "2026-10-28",
+      "responsible": "Sarah Chen, IT Administrator"
+    },
+    {
+      "poam_id": "POAM-018",
+      "control_id": "3.11.3",
+      "status": "NOT MET",
+      "weakness": "No vulnerability remediation process",
+      "current_state": "No process for tracking or remediating discovered vulnerabilities",
+      "target_state": "Vulnerability remediation within 30 days of discovery per risk-based priority",
+      "tasks": "Establish vulnerability tracking in M365 Defender; define remediation SLAs; assign responsibilities",
+      "resources": "IT Administrator (Sarah Chen) - estimated 4-8 hours. No additional licensing required.",
+      "milestones": "Implementation by 2026-11-04; verification within 7 days; SSP updated within 14 days",
+      "completion_date": "2026-11-04",
+      "responsible": "Sarah Chen, IT Administrator"
+    },
+    {
+      "poam_id": "POAM-019",
+      "control_id": "3.13.3",
+      "status": "NOT MET",
+      "weakness": "User and system roles not separated",
+      "current_state": "All users run as local admins on Windows endpoints; no role separation enforced",
+      "target_state": "Standard user accounts for daily use; separate admin accounts for privileged functions",
+      "tasks": "Remove local admin rights via GPO; create dedicated admin accounts; test application compatibility",
+      "resources": "IT Administrator (Sarah Chen) - estimated 4-8 hours. No additional licensing required.",
+      "milestones": "Implementation by 2026-11-11; verification within 7 days; SSP updated within 14 days",
+      "completion_date": "2026-11-11",
+      "responsible": "Sarah Chen, IT Administrator"
+    },
+    {
+      "poam_id": "POAM-020",
+      "control_id": "3.13.11",
+      "status": "PARTIAL",
+      "weakness": "Encryption not FIPS 140-2 validated",
+      "current_state": "Virtru uses AES-256 but module is not on CMVP validated list; BitLocker not in FIPS mode",
+      "target_state": "FIPS 140-2 validated encryption for all CUI at rest and in transit",
+      "tasks": "Enable BitLocker FIPS mode via GPO; configure M365 TLS with FIPS-validated modules; update Virtru config or replace with FIPS-compliant alternative",
+      "resources": "IT Administrator (Sarah Chen) - estimated 4-8 hours. No additional licensing required.",
+      "milestones": "Implementation by 2026-11-11; verification within 7 days; SSP updated within 14 days",
+      "completion_date": "2026-11-11",
+      "responsible": "Sarah Chen, IT Administrator"
+    }
+  ],
+  "ssp_narratives": {
+    "narratives": [
+      {
+        "control_id": "3.1.1",
+        "status": "MET",
+        "narrative": "Helios BioSystems limits information system access to authorized users through Microsoft 365 Business Premium with Azure AD Conditional Access policies. Three role tiers are enforced: Admin (Sarah Chen only), CUI Users (3 researchers), and Read-Only (1 project manager). Access requests require email approval from Sarah plus CEO sign-off for CUI-tier access. Quarterly access reviews are conducted, with the most recent completed on 2026-04-15. Evidence: E-AC-001 (Azure AD Conditional Access policy export), E-AC-002 (Q1 2026 access review log), E-AC-003 (employee onboarding/offboarding checklist).",
+        "evidence_ids": [
+          "E-AC-001",
+          "E-AC-002",
+          "E-AC-003"
+        ]
+      },
+      {
+        "control_id": "3.5.2",
+        "status": "MET",
+        "narrative": "All users authenticate to organizational systems via Azure AD with enforced password policies: minimum 12 characters, complexity requirements enabled, and 90-day rotation. Service accounts use managed identities with no interactive login capability. Authentication events are logged in Azure AD Sign-in Logs and retained for 90 days. The IT administrator reviews failed authentication attempts weekly. Evidence: E-IA-001 (Azure AD password policy screenshot), E-IA-002 (sign-in log sample from 2026-04-01).",
+        "evidence_ids": [
+          "E-IA-001",
+          "E-IA-002"
+        ]
+      },
+      {
+        "control_id": "3.1.8",
+        "status": "NOT MET",
+        "narrative": "Helios BioSystems does not currently enforce account lockout after unsuccessful login attempts. Windows workstations allow unlimited login attempts with no lockout policy configured in Azure AD Conditional Access or local Group Policy. This gap will be addressed via POA&M item POAM-001 by configuring Azure AD smart lockout with a threshold of 5 attempts and 15-minute lockout duration. Target completion: 2026-07-08. Evidence: E-AC-004 (current Azure AD sign-in policy showing no lockout), E-AC-005 (POA&M entry POAM-001).",
+        "evidence_ids": [
+          "E-AC-004",
+          "E-AC-005"
+        ]
+      },
+      {
+        "control_id": "3.3.3",
+        "status": "NOT MET",
+        "narrative": "Event log review is not systematically performed at Helios BioSystems. While M365 Unified Audit Logs capture events automatically, no staff member is assigned to review them on a regular schedule and no alerting is configured for anomalous activity. This gap will be remediated via POA&M item POAM-006 by establishing a weekly log review process using M365 alert policies and a documented review checklist. Target completion: 2026-08-19. Evidence: E-AU-001 (M365 audit log settings screenshot showing no alert policies), E-AU-002 (POA&M entry POAM-006).",
+        "evidence_ids": [
+          "E-AU-001",
+          "E-AU-002"
+        ]
+      },
+      {
+        "control_id": "3.13.11",
+        "status": "PARTIAL",
+        "narrative": "Helios BioSystems encrypts CUI at rest using BitLocker (AES-256) on Windows laptops and FileVault on Mac, and in transit via Virtru for email and TLS 1.3 for M365 services. However, neither BitLocker nor Virtru operates in FIPS 140-2 validated mode, and the cryptographic modules are not on the CMVP validated modules list. This partial implementation will be remediated via POA&M item POAM-020 by enabling BitLocker FIPS mode via GPO and configuring FIPS-validated TLS modules. Target completion: 2026-10-28. Evidence: E-SC-001 (BitLocker status showing non-FIPS mode), E-SC-002 (Virtru configuration export), E-SC-003 (POA&M entry POAM-020).",
+        "evidence_ids": [
+          "E-SC-001",
+          "E-SC-002",
+          "E-SC-003"
+        ]
+      }
+    ],
+    "evidence_refs": [
+      {
+        "evidence_id": "E-AC-001",
+        "description": "Azure AD Conditional Access policy export",
+        "family": "AC"
+      },
+      {
+        "evidence_id": "E-AC-002",
+        "description": "Q1 2026 access review log",
+        "family": "AC"
+      },
+      {
+        "evidence_id": "E-AC-003",
+        "description": "Employee onboarding/offboarding checklist",
+        "family": "AC"
+      },
+      {
+        "evidence_id": "E-AC-004",
+        "description": "Azure AD sign-in policy showing no lockout",
+        "family": "AC"
+      },
+      {
+        "evidence_id": "E-AC-005",
+        "description": "POA&M entry POAM-001 for account lockout",
+        "family": "AC"
+      },
+      {
+        "evidence_id": "E-IA-001",
+        "description": "Azure AD password policy screenshot",
+        "family": "IA"
+      },
+      {
+        "evidence_id": "E-IA-002",
+        "description": "Sign-in log sample from 2026-04-01",
+        "family": "IA"
+      },
+      {
+        "evidence_id": "E-AU-001",
+        "description": "M365 audit log settings with no alert policies",
+        "family": "AU"
+      },
+      {
+        "evidence_id": "E-AU-002",
+        "description": "POA&M entry POAM-006 for event review",
+        "family": "AU"
+      },
+      {
+        "evidence_id": "E-SC-001",
+        "description": "BitLocker status showing non-FIPS mode",
+        "family": "SC"
+      },
+      {
+        "evidence_id": "E-SC-002",
+        "description": "Virtru configuration export",
+        "family": "SC"
+      },
+      {
+        "evidence_id": "E-SC-003",
+        "description": "POA&M entry POAM-020 for FIPS encryption",
+        "family": "SC"
+      }
+    ]
+  }
+}

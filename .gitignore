@@ -1,0 +1,6 @@
+dist/*.zip
+__pycache__/
+standin_answer_key.json
+marlin_findings.json
+local/*
+!local/README.md

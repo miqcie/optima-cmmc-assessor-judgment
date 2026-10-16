@@ -1,0 +1,228 @@
+{
+  "_comment": "Pathological client scenarios that stress-test agent assumptions. Each scenario targets a different edge case in the CMMC consulting methodology.",
+  "scenarios": [
+    {
+      "id": "university_spinout",
+      "name": "OceanTech Instruments (University Spinout)",
+      "edge_cases": [
+        "Shared lab with Navy — personnel overlap creates CUI determination ambiguity",
+        "Grant vs contract instrument type — DFARS may not apply to grants",
+        "PI has dual appointments (university + company)",
+        "Lab equipment is government-furnished (GFE) via cooperative agreement",
+        "Students access CUI systems as part of research — personnel screening gap"
+      ],
+      "org_profile": {
+        "name": "OceanTech Instruments LLC",
+        "employees": 8,
+        "industry": "Defense R&D / Oceanographic Instruments",
+        "location": "Narragansett, RI",
+        "parent_relationship": "Spinout from URI, shared lab space",
+        "annual_revenue": "$1.2M",
+        "current_contracts": [
+          {
+            "number": "N00014-24-C-1234",
+            "type": "contract",
+            "agency": "ONR",
+            "cui_types": ["CTI", "EXPT"],
+            "dfars_clause": "252.204-7012"
+          },
+          {
+            "number": "N00014-24-G-5678",
+            "type": "grant",
+            "agency": "ONR",
+            "cui_types": ["EXPT"],
+            "dfars_clause": null,
+            "_comment": "Grants may not include DFARS 7012 — agent should flag this"
+          }
+        ]
+      },
+      "intake_answers": {
+        "system_boundary": "Shared URI lab, 3 dedicated workstations, URI network segment, personal laptops used for email",
+        "it_staff": "None dedicated — PI configures systems, URI IT provides network",
+        "cui_flow": "CUI generated in lab (sensor data), stored on local NAS, shared via email with Navy PM",
+        "email_provider": "URI institutional email (Google Workspace for Education)",
+        "endpoint_protection": "URI-managed Sophos on shared lab machines, nothing on personal laptops",
+        "mfa": "URI SSO with Duo MFA for lab machines, no MFA on NAS",
+        "backup": "Manual USB backup to PI's home, no offsite",
+        "incident_response": "Would call URI IT — no formal IR plan",
+        "physical_security": "URI campus card access to building, lab locked with key",
+        "media_protection": "USB drives in PI's desk drawer, not encrypted",
+        "personnel": "3 employees + 2 URI grad students + PI with dual appointment",
+        "gfe": "2 hydrophones and 1 signal processor on loan from NAVSEA"
+      },
+      "expected_agent_flags": [
+        "Grant instrument may not require CMMC — verify DFARS clause presence",
+        "Shared URI network creates system boundary ambiguity",
+        "Personal laptops in scope if used for CUI-adjacent work",
+        "GFE handling requires specific controls (MP family)",
+        "Grad students need CUI access agreements and screening",
+        "USB backup to PI's home is a CUI spillage risk",
+        "Google Workspace for Education may not meet FedRAMP Moderate"
+      ]
+    },
+    {
+      "id": "micro_contractor",
+      "name": "Precision Coatings (3-Person Company)",
+      "edge_cases": [
+        "Owner wears all hats — IT admin, CISO, compliance officer, machinist",
+        "No IT staff — consumer-grade everything",
+        "Budget under $5K/year for all IT",
+        "Realistic: M365 Business Basic, consumer Netgear router, Ring camera",
+        "Every answer is 'Jane does it'"
+      ],
+      "org_profile": {
+        "name": "Precision Coatings Inc.",
+        "employees": 3,
+        "industry": "Surface Treatment / Specialty Coatings",
+        "location": "Bristol, CT",
+        "parent_relationship": null,
+        "annual_revenue": "$380K",
+        "current_contracts": [
+          {
+            "number": "W56HZV-25-C-0042",
+            "type": "contract",
+            "agency": "Army",
+            "cui_types": ["CTI"],
+            "dfars_clause": "252.204-7012"
+          }
+        ]
+      },
+      "intake_answers": {
+        "system_boundary": "One desktop in shop office, one laptop (Jane's), shop floor PC for CNC machine",
+        "it_staff": "Jane (owner) does everything",
+        "cui_flow": "Receives specs via email (PDF), stores on desktop, prints for shop floor",
+        "email_provider": "Microsoft 365 Business Basic",
+        "endpoint_protection": "Windows Defender (built-in)",
+        "mfa": "None — 'too complicated, it's just me and two guys'",
+        "backup": "Nothing — 'I should probably do that'",
+        "incident_response": "Would call nephew who 'does computers'",
+        "physical_security": "Deadbolt on shop door, no alarm, Ring doorbell camera",
+        "media_protection": "Specs printed and filed in shop cabinet",
+        "personnel": "Jane (owner/everything), Mike (machinist), Dave (machinist)",
+        "gfe": "None"
+      },
+      "expected_agent_flags": [
+        "M365 Business Basic may not include required compliance features — need Business Premium or E3+",
+        "Consumer router has no FIPS-validated encryption, no VLAN capability",
+        "No MFA is a critical gap for AC and IA families",
+        "No backup = no MP.L2-3.8.9 compliance",
+        "CNC machine PC in scope if connected to network with CUI",
+        "Recommendations must be realistic for $5K budget",
+        "Do NOT recommend SIEM, SOC, or enterprise tools for 3 people",
+        "Ring camera is consumer IoT — physical security gap"
+      ]
+    },
+    {
+      "id": "cloud_only",
+      "name": "Meridian Analytics (Cloud-Only)",
+      "edge_cases": [
+        "No on-prem infrastructure — entire system boundary is cloud",
+        "Multiple SaaS providers create complex shared responsibility",
+        "GFE handled by prime contractor (Meridian is sub)",
+        "Remote-only workforce — no office",
+        "AWS GovCloud + commercial SaaS mix"
+      ],
+      "org_profile": {
+        "name": "Meridian Analytics LLC",
+        "employees": 12,
+        "industry": "Data Analytics / Intelligence Support",
+        "location": "Remote (incorporated in VA)",
+        "parent_relationship": "Subcontractor to Northrop Grumman",
+        "annual_revenue": "$2.8M",
+        "current_contracts": [
+          {
+            "number": "FA8750-25-C-0199 (flow-down from NG)",
+            "type": "subcontract",
+            "agency": "Air Force (via NG prime)",
+            "cui_types": ["CTI", "OPSEC"],
+            "dfars_clause": "252.204-7012 (flow-down)"
+          }
+        ]
+      },
+      "intake_answers": {
+        "system_boundary": "AWS GovCloud (analytics platform), Microsoft 365 E5 (email/collab), Salesforce (CRM, no CUI), Okta (SSO/MFA)",
+        "it_staff": "1 DevOps engineer, uses Okta admin + AWS admin",
+        "cui_flow": "Receives CUI datasets from NG via SFTP to S3, processes in EC2, results delivered via encrypted SharePoint",
+        "email_provider": "Microsoft 365 E5 with Purview",
+        "endpoint_protection": "CrowdStrike Falcon on all company laptops (managed via Intune)",
+        "mfa": "Okta Verify (push) for all apps, hardware keys for AWS admin",
+        "backup": "AWS S3 versioning + cross-region replication, M365 retention policies",
+        "incident_response": "Written IR plan, NG CIRT notified per subcontract, CrowdStrike managed detection",
+        "physical_security": "No office — all remote. Company laptops shipped with Bitlocker enabled.",
+        "media_protection": "No removable media policy — USB ports disabled via Intune",
+        "personnel": "12 employees, all cleared Secret, annual security awareness via KnowBe4",
+        "gfe": "None — all equipment company-furnished. NG provides SFTP credentials only"
+      },
+      "expected_agent_flags": [
+        "System boundary is 100% cloud — PE controls may be inherited from CSPs",
+        "Shared responsibility model: AWS GovCloud (FedRAMP High) vs M365 (FedRAMP Moderate)",
+        "Salesforce must be explicitly OUT of scope if no CUI touches it",
+        "Subcontract flow-down — CMMC requirement comes from NG, not direct DoD",
+        "Remote workforce means PE controls are home-office focused",
+        "SFTP credential management is a critical IA control",
+        "Strong existing posture — likely close to compliant already"
+      ]
+    },
+    {
+      "id": "itar_cui_mixed",
+      "name": "Hawkeye Defense Systems (ITAR + CUI Mixed)",
+      "edge_cases": [
+        "Dual CUI markings: CUI Basic and CUI Specified (ITAR)",
+        "ITAR overlay requires additional controls beyond CMMC L2",
+        "Export control adds personnel citizenship requirements",
+        "Different handling requirements for different data types",
+        "Foreign national employees create ITAR complications"
+      ],
+      "org_profile": {
+        "name": "Hawkeye Defense Systems Inc.",
+        "employees": 45,
+        "industry": "Electro-Optical Systems / Defense Electronics",
+        "location": "Tucson, AZ",
+        "parent_relationship": null,
+        "annual_revenue": "$18M",
+        "current_contracts": [
+          {
+            "number": "W31P4Q-25-C-0088",
+            "type": "contract",
+            "agency": "Army PEO Missiles",
+            "cui_types": ["CTI"],
+            "dfars_clause": "252.204-7012"
+          },
+          {
+            "number": "DAAB07-25-C-0003",
+            "type": "contract",
+            "agency": "Army CCDC",
+            "cui_types": ["CTI", "EXPT"],
+            "dfars_clause": "252.204-7012",
+            "itar": true,
+            "usml_category": "XII(c) — Fire Control Equipment"
+          }
+        ]
+      },
+      "intake_answers": {
+        "system_boundary": "On-prem AD domain, Palo Alto firewall, VMware cluster, classified//unclassified air-gapped lab, 3 remote engineers via VPN",
+        "it_staff": "IT Director + 2 sysadmins, dedicated InfoSec analyst",
+        "cui_flow": "ITAR data in air-gapped lab only, CUI Basic on main network, engineering drawings cross boundary via sneakernet (approved USB)",
+        "email_provider": "On-prem Exchange 2019 with TLS/SMIME",
+        "endpoint_protection": "Symantec Endpoint on all domain machines, CrowdStrike on air-gapped lab (standalone)",
+        "mfa": "RSA SecurID for VPN and admin, smart cards for ITAR lab access",
+        "backup": "Veeam to on-prem NAS (encrypted), ITAR systems backed up to separate encrypted NAS in vault",
+        "incident_response": "Formal IR plan, DCSA reported per DFARS 7012, DDTC notified for ITAR incidents",
+        "physical_security": "Alarmed facility, mantrap for ITAR lab, CCTV, visitor logs, all doors badge-access",
+        "media_protection": "ITAR media in GSA-approved safe, CUI media in locked cabinet, degaussing for disposal",
+        "personnel": "38 US citizens, 4 permanent residents (no ITAR access), 3 foreign nationals (ITAR-restricted areas physically separated)",
+        "gfe": "2 classified laptops (stored in SCIF), 1 test fixture from PEO Missiles"
+      },
+      "expected_agent_flags": [
+        "ITAR data requires DDTC notification for incidents — separate from DFARS 7012",
+        "Air-gapped lab is a separate security domain — may need its own SSP section",
+        "Sneakernet USB transfers between domains need strict media protection controls",
+        "Foreign national employees must be physically separated from ITAR-controlled areas",
+        "Permanent residents may access CUI Basic but NOT ITAR technical data",
+        "Two different CUI handling procedures needed: CUI Basic vs CUI//ITAR",
+        "Existing security posture is mature — focus on documentation, not remediation",
+        "GFE classified laptops in SCIF are likely out of CMMC scope"
+      ]
+    }
+  ]
+}

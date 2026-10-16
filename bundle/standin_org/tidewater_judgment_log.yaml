@@ -1,0 +1,50 @@
+# Judgment log — Tidewater Biologics LLC (generated stand-in)
+#
+# Each entry records a point where an AI draft proposal was reviewed by the
+# consultant. `outcome` is one of: accepted, accepted_with_edits, overridden.
+# The pattern mirrors a real engagement's log; wording and identifiers are invented.
+# These entries are OUTCOME EVIDENCE: they record what the right call turned out
+# to be. They are not task inputs.
+
+- gate: cui-determination
+  phase: 1
+  agent_proposal: "Treat as a grant. DFARS does not flow down to grants (32 CFR 21.325), so CMMC may not apply. Recommend confirming with the program officer before scoping."
+  human_decision: "CUI applies in full. Award N0001426C0417 is a federal contract, not a grant or cooperative agreement. DFARS 252.204-7012 and 7021 flow down."
+  rationale: "The N00014-series award number is a Navy contract format. The intake call confirmed instrument type. Non-US-person access was logged as a separate export-control item rather than blocking the CUI call."
+  outcome: overridden
+  reusable_pattern: "Award-number format is a fast instrument-type signal. Never scope a CMMC engagement on the client's belief about grant vs contract; read the award."
+
+- gate: engagement-viability
+  phase: 1
+  agent_proposal: "Flag the non-US-person team member as a risk that may make the engagement non-viable."
+  human_decision: "Go. Access restriction by organizational unit and written policy is sufficient. Team size and scope fit a fixed-fee SSP engagement."
+  outcome: overridden
+  reusable_pattern: "A non-US person on staff is a scoping fact, not a disqualifier, when CUI access is limited to named US persons."
+
+- gate: tier-0-validation
+  phase: 2
+  agent_proposal: "Preliminary blocker count of 46 from a first pass with hand-entered control weights."
+  human_decision: "Accepted with revision. A full audit against the DoD Assessment Methodology v1.2.1 found 36 hand-entered weights wrong. Corrected register changed the blocker count to 54 and the score from -125 to -153."
+  outcome: accepted_with_edits
+  reusable_pattern: "Never hand-type SPRS weights. Regenerate from the authoritative weight file and re-verify blocker counts before anything reaches the client."
+
+- gate: remediation-strategy-approval
+  phase: 3
+  agent_proposal: "BitLocker for CUI at rest on the Windows laptop; FileVault on the Macs."
+  human_decision: "Client selected a client-side encryption product at $399/month, then reversed after budget review and moved to Google Workspace Enterprise Plus with Assured Controls (about $236/month for 3 users)."
+  outcome: overridden
+  reusable_pattern: "A remediation gate can reopen after client budget pushback. Log the reversal as a new entry, not an edit to the original."
+
+- gate: ssp-boundary-review
+  phase: 4
+  agent_proposal: "Mark 3.1.18 and 3.1.19 NOT MET because employees carry smartphones."
+  human_decision: "Marked N/A. Written policy dated 2026-03-19 excludes phones from the CUI boundary; no phone stores, processes, or transmits CUI. The N/A narrative cites the policy and the technical enforcement (no Workspace mobile sync for the CUI organizational unit)."
+  outcome: overridden
+  reusable_pattern: "N/A is a defensible status only when a written policy and a technical control both keep the asset out of the boundary. 'We do not use phones' alone is not enough."
+
+- gate: sprs-sign-off
+  phase: 5
+  agent_proposal: "SPRS -153 with CA.L2-3.12.2 (Plan of Action) NOT MET."
+  human_decision: "Reclassified 3.12.2 to MET. The POA&M produced in this engagement is the artifact that satisfies the control's assessment objective. Score moves from -153 to -150."
+  outcome: overridden
+  reusable_pattern: "When the deliverable itself is the evidence for a control, the control is MET at delivery. Check the 3-point CA family controls for this before sign-off."

@@ -1,0 +1,3 @@
+- 2026-10-15: wrapping up a month-old session → the session scratchpad holding the staged bundle was purged; rebuilt it from Write/heredoc calls in the session JSONL
+- 2026-10-15: gh repo create --source=. --push → SSH push failed (access rights); switched remote to HTTPS and pushed
+- 2026-10-15: pypdf extract_text on the Optima report → KeyError bbox on its fonts; read the PDF visually instead
