@@ -1,0 +1,325 @@
+task,category,model,score,attempts
+All-controls-failed scoring baseline,SPRS and eligibility,GPT-6 Astra (medium),100,2
+All-controls-failed scoring baseline,SPRS and eligibility,Claude Fable 5.1 (medium),100,2
+All-controls-failed scoring baseline,SPRS and eligibility,Inkling (xhigh),50,2
+All-controls-failed scoring baseline,SPRS and eligibility,GPT-5.6 Luna (medium),100,2
+All-controls-failed scoring baseline,SPRS and eligibility,GLM-5.3-Flash,100,2
+All-controls-failed scoring baseline,SPRS and eligibility,Gemini 3.5 Flash-Lite (medium),100,2
+All-controls-failed scoring baseline,SPRS and eligibility,Muse Spark 1.3 (medium),,0
+All-controls-failed scoring baseline,SPRS and eligibility,Claude 4.5 Haiku,100,2
+All-controls-failed scoring baseline,SPRS and eligibility,Gemma 4 31B,0,2
+Northstar partial-credit split,SPRS and eligibility,GPT-6 Astra (medium),100,2
+Northstar partial-credit split,SPRS and eligibility,Claude Fable 5.1 (medium),100,2
+Northstar partial-credit split,SPRS and eligibility,Inkling (xhigh),100,2
+Northstar partial-credit split,SPRS and eligibility,GPT-5.6 Luna (medium),100,2
+Northstar partial-credit split,SPRS and eligibility,GLM-5.3-Flash,,0
+Northstar partial-credit split,SPRS and eligibility,Gemini 3.5 Flash-Lite (medium),100,2
+Northstar partial-credit split,SPRS and eligibility,Muse Spark 1.3 (medium),100,2
+Northstar partial-credit split,SPRS and eligibility,Claude 4.5 Haiku,100,2
+Northstar partial-credit split,SPRS and eligibility,Gemma 4 31B,100,2
+Summit zero-point SSP blocker,SPRS and eligibility,GPT-6 Astra (medium),100,2
+Summit zero-point SSP blocker,SPRS and eligibility,Claude Fable 5.1 (medium),100,2
+Summit zero-point SSP blocker,SPRS and eligibility,Inkling (xhigh),100,2
+Summit zero-point SSP blocker,SPRS and eligibility,GPT-5.6 Luna (medium),100,2
+Summit zero-point SSP blocker,SPRS and eligibility,GLM-5.3-Flash,100,2
+Summit zero-point SSP blocker,SPRS and eligibility,Gemini 3.5 Flash-Lite (medium),100,2
+Summit zero-point SSP blocker,SPRS and eligibility,Muse Spark 1.3 (medium),100,1
+Summit zero-point SSP blocker,SPRS and eligibility,Claude 4.5 Haiku,0,1
+Summit zero-point SSP blocker,SPRS and eligibility,Gemma 4 31B,100,2
+Summit 3.1.4 weight override,SPRS and eligibility,GPT-6 Astra (medium),100,2
+Summit 3.1.4 weight override,SPRS and eligibility,Claude Fable 5.1 (medium),100,2
+Summit 3.1.4 weight override,SPRS and eligibility,Inkling (xhigh),100,2
+Summit 3.1.4 weight override,SPRS and eligibility,GPT-5.6 Luna (medium),100,2
+Summit 3.1.4 weight override,SPRS and eligibility,GLM-5.3-Flash,100,2
+Summit 3.1.4 weight override,SPRS and eligibility,Gemini 3.5 Flash-Lite (medium),100,2
+Summit 3.1.4 weight override,SPRS and eligibility,Muse Spark 1.3 (medium),,0
+Summit 3.1.4 weight override,SPRS and eligibility,Claude 4.5 Haiku,100,2
+Summit 3.1.4 weight override,SPRS and eligibility,Gemma 4 31B,100,2
+Acme unknowns and conditional status,SPRS and eligibility,GPT-6 Astra (medium),100,2
+Acme unknowns and conditional status,SPRS and eligibility,Claude Fable 5.1 (medium),50,2
+Acme unknowns and conditional status,SPRS and eligibility,Inkling (xhigh),100,2
+Acme unknowns and conditional status,SPRS and eligibility,GPT-5.6 Luna (medium),100,2
+Acme unknowns and conditional status,SPRS and eligibility,GLM-5.3-Flash,50,2
+Acme unknowns and conditional status,SPRS and eligibility,Gemini 3.5 Flash-Lite (medium),100,2
+Acme unknowns and conditional status,SPRS and eligibility,Muse Spark 1.3 (medium),,0
+Acme unknowns and conditional status,SPRS and eligibility,Claude 4.5 Haiku,0,2
+Acme unknowns and conditional status,SPRS and eligibility,Gemma 4 31B,0,2
+Helios score under unknowns,SPRS and eligibility,GPT-6 Astra (medium),100,2
+Helios score under unknowns,SPRS and eligibility,Claude Fable 5.1 (medium),100,2
+Helios score under unknowns,SPRS and eligibility,Inkling (xhigh),100,2
+Helios score under unknowns,SPRS and eligibility,GPT-5.6 Luna (medium),100,2
+Helios score under unknowns,SPRS and eligibility,GLM-5.3-Flash,100,2
+Helios score under unknowns,SPRS and eligibility,Gemini 3.5 Flash-Lite (medium),100,2
+Helios score under unknowns,SPRS and eligibility,Muse Spark 1.3 (medium),100,2
+Helios score under unknowns,SPRS and eligibility,Claude 4.5 Haiku,0,1
+Helios score under unknowns,SPRS and eligibility,Gemma 4 31B,0,1
+Helios POA&M chain determination,SPRS and eligibility,GPT-6 Astra (medium),0,2
+Helios POA&M chain determination,SPRS and eligibility,Claude Fable 5.1 (medium),50,2
+Helios POA&M chain determination,SPRS and eligibility,Inkling (xhigh),,0
+Helios POA&M chain determination,SPRS and eligibility,GPT-5.6 Luna (medium),0,2
+Helios POA&M chain determination,SPRS and eligibility,GLM-5.3-Flash,0,2
+Helios POA&M chain determination,SPRS and eligibility,Gemini 3.5 Flash-Lite (medium),0,2
+Helios POA&M chain determination,SPRS and eligibility,Muse Spark 1.3 (medium),0,2
+Helios POA&M chain determination,SPRS and eligibility,Claude 4.5 Haiku,0,2
+Helios POA&M chain determination,SPRS and eligibility,Gemma 4 31B,0,2
+Harbor POA&M validity audit,SPRS and eligibility,GPT-6 Astra (medium),100,2
+Harbor POA&M validity audit,SPRS and eligibility,Claude Fable 5.1 (medium),100,2
+Harbor POA&M validity audit,SPRS and eligibility,Inkling (xhigh),100,2
+Harbor POA&M validity audit,SPRS and eligibility,GPT-5.6 Luna (medium),100,2
+Harbor POA&M validity audit,SPRS and eligibility,GLM-5.3-Flash,100,2
+Harbor POA&M validity audit,SPRS and eligibility,Gemini 3.5 Flash-Lite (medium),100,2
+Harbor POA&M validity audit,SPRS and eligibility,Muse Spark 1.3 (medium),100,2
+Harbor POA&M validity audit,SPRS and eligibility,Claude 4.5 Haiku,100,2
+Harbor POA&M validity audit,SPRS and eligibility,Gemma 4 31B,,0
+Tidewater full-register sign-off,SPRS and eligibility,GPT-6 Astra (medium),100,2
+Tidewater full-register sign-off,SPRS and eligibility,Claude Fable 5.1 (medium),100,2
+Tidewater full-register sign-off,SPRS and eligibility,Inkling (xhigh),100,2
+Tidewater full-register sign-off,SPRS and eligibility,GPT-5.6 Luna (medium),0,1
+Tidewater full-register sign-off,SPRS and eligibility,GLM-5.3-Flash,50,2
+Tidewater full-register sign-off,SPRS and eligibility,Gemini 3.5 Flash-Lite (medium),50,2
+Tidewater full-register sign-off,SPRS and eligibility,Muse Spark 1.3 (medium),100,2
+Tidewater full-register sign-off,SPRS and eligibility,Claude 4.5 Haiku,0,1
+Tidewater full-register sign-off,SPRS and eligibility,Gemma 4 31B,0,2
+Gap matrix weight-column audit,Assessor work audit,GPT-6 Astra (medium),100,2
+Gap matrix weight-column audit,Assessor work audit,Claude Fable 5.1 (medium),100,2
+Gap matrix weight-column audit,Assessor work audit,Inkling (xhigh),100,2
+Gap matrix weight-column audit,Assessor work audit,GPT-5.6 Luna (medium),25,2
+Gap matrix weight-column audit,Assessor work audit,GLM-5.3-Flash,25,2
+Gap matrix weight-column audit,Assessor work audit,Gemini 3.5 Flash-Lite (medium),100,2
+Gap matrix weight-column audit,Assessor work audit,Muse Spark 1.3 (medium),,0
+Gap matrix weight-column audit,Assessor work audit,Claude 4.5 Haiku,100,2
+Gap matrix weight-column audit,Assessor work audit,Gemma 4 31B,25,2
+Gap matrix partial-credit audit,Assessor work audit,GPT-6 Astra (medium),100,2
+Gap matrix partial-credit audit,Assessor work audit,Claude Fable 5.1 (medium),,0
+Gap matrix partial-credit audit,Assessor work audit,Inkling (xhigh),75,2
+Gap matrix partial-credit audit,Assessor work audit,GPT-5.6 Luna (medium),100,2
+Gap matrix partial-credit audit,Assessor work audit,GLM-5.3-Flash,50,2
+Gap matrix partial-credit audit,Assessor work audit,Gemini 3.5 Flash-Lite (medium),100,2
+Gap matrix partial-credit audit,Assessor work audit,Muse Spark 1.3 (medium),75,2
+Gap matrix partial-credit audit,Assessor work audit,Claude 4.5 Haiku,100,2
+Gap matrix partial-credit audit,Assessor work audit,Gemma 4 31B,75,2
+Marlin score reconciliation,Assessor work audit,GPT-6 Astra (medium),100,2
+Marlin score reconciliation,Assessor work audit,Claude Fable 5.1 (medium),100,2
+Marlin score reconciliation,Assessor work audit,Inkling (xhigh),50,2
+Marlin score reconciliation,Assessor work audit,GPT-5.6 Luna (medium),50,2
+Marlin score reconciliation,Assessor work audit,GLM-5.3-Flash,100,2
+Marlin score reconciliation,Assessor work audit,Gemini 3.5 Flash-Lite (medium),100,2
+Marlin score reconciliation,Assessor work audit,Muse Spark 1.3 (medium),,0
+Marlin score reconciliation,Assessor work audit,Claude 4.5 Haiku,50,2
+Marlin score reconciliation,Assessor work audit,Gemma 4 31B,50,2
+Clean audit of critical MFA finding,Assessor work audit,GPT-6 Astra (medium),100,2
+Clean audit of critical MFA finding,Assessor work audit,Claude Fable 5.1 (medium),100,1
+Clean audit of critical MFA finding,Assessor work audit,Inkling (xhigh),100,1
+Clean audit of critical MFA finding,Assessor work audit,GPT-5.6 Luna (medium),100,2
+Clean audit of critical MFA finding,Assessor work audit,GLM-5.3-Flash,100,2
+Clean audit of critical MFA finding,Assessor work audit,Gemini 3.5 Flash-Lite (medium),100,2
+Clean audit of critical MFA finding,Assessor work audit,Muse Spark 1.3 (medium),100,2
+Clean audit of critical MFA finding,Assessor work audit,Claude 4.5 Haiku,100,2
+Clean audit of critical MFA finding,Assessor work audit,Gemma 4 31B,100,2
+POA&M tracker arithmetic reconciliation,Assessor work audit,GPT-6 Astra (medium),100,2
+POA&M tracker arithmetic reconciliation,Assessor work audit,Claude Fable 5.1 (medium),100,2
+POA&M tracker arithmetic reconciliation,Assessor work audit,Inkling (xhigh),100,2
+POA&M tracker arithmetic reconciliation,Assessor work audit,GPT-5.6 Luna (medium),100,2
+POA&M tracker arithmetic reconciliation,Assessor work audit,GLM-5.3-Flash,100,2
+POA&M tracker arithmetic reconciliation,Assessor work audit,Gemini 3.5 Flash-Lite (medium),100,2
+POA&M tracker arithmetic reconciliation,Assessor work audit,Muse Spark 1.3 (medium),,0
+POA&M tracker arithmetic reconciliation,Assessor work audit,Claude 4.5 Haiku,100,2
+POA&M tracker arithmetic reconciliation,Assessor work audit,Gemma 4 31B,50,2
+POA&M tracker eligibility audit,Assessor work audit,GPT-6 Astra (medium),100,2
+POA&M tracker eligibility audit,Assessor work audit,Claude Fable 5.1 (medium),100,2
+POA&M tracker eligibility audit,Assessor work audit,Inkling (xhigh),100,2
+POA&M tracker eligibility audit,Assessor work audit,GPT-5.6 Luna (medium),100,2
+POA&M tracker eligibility audit,Assessor work audit,GLM-5.3-Flash,50,2
+POA&M tracker eligibility audit,Assessor work audit,Gemini 3.5 Flash-Lite (medium),100,2
+POA&M tracker eligibility audit,Assessor work audit,Muse Spark 1.3 (medium),,0
+POA&M tracker eligibility audit,Assessor work audit,Claude 4.5 Haiku,100,2
+POA&M tracker eligibility audit,Assessor work audit,Gemma 4 31B,50,2
+POA&M tracker point-value audit,Assessor work audit,GPT-6 Astra (medium),100,2
+POA&M tracker point-value audit,Assessor work audit,Claude Fable 5.1 (medium),100,2
+POA&M tracker point-value audit,Assessor work audit,Inkling (xhigh),100,2
+POA&M tracker point-value audit,Assessor work audit,GPT-5.6 Luna (medium),100,2
+POA&M tracker point-value audit,Assessor work audit,GLM-5.3-Flash,100,2
+POA&M tracker point-value audit,Assessor work audit,Gemini 3.5 Flash-Lite (medium),100,2
+POA&M tracker point-value audit,Assessor work audit,Muse Spark 1.3 (medium),,0
+POA&M tracker point-value audit,Assessor work audit,Claude 4.5 Haiku,100,2
+POA&M tracker point-value audit,Assessor work audit,Gemma 4 31B,50,2
+Consolidated Marlin diligence audit,Assessor work audit,GPT-6 Astra (medium),100,2
+Consolidated Marlin diligence audit,Assessor work audit,Claude Fable 5.1 (medium),50,2
+Consolidated Marlin diligence audit,Assessor work audit,Inkling (xhigh),67,2
+Consolidated Marlin diligence audit,Assessor work audit,GPT-5.6 Luna (medium),50,2
+Consolidated Marlin diligence audit,Assessor work audit,GLM-5.3-Flash,0,1
+Consolidated Marlin diligence audit,Assessor work audit,Gemini 3.5 Flash-Lite (medium),50,2
+Consolidated Marlin diligence audit,Assessor work audit,Muse Spark 1.3 (medium),67,2
+Consolidated Marlin diligence audit,Assessor work audit,Claude 4.5 Haiku,17,2
+Consolidated Marlin diligence audit,Assessor work audit,Gemma 4 31B,0,1
+Six-narrative assessor-readiness review,SSP narrative review,GPT-6 Astra (medium),,0
+Six-narrative assessor-readiness review,SSP narrative review,Claude Fable 5.1 (medium),100,2
+Six-narrative assessor-readiness review,SSP narrative review,Inkling (xhigh),100,2
+Six-narrative assessor-readiness review,SSP narrative review,GPT-5.6 Luna (medium),100,2
+Six-narrative assessor-readiness review,SSP narrative review,GLM-5.3-Flash,100,2
+Six-narrative assessor-readiness review,SSP narrative review,Gemini 3.5 Flash-Lite (medium),100,2
+Six-narrative assessor-readiness review,SSP narrative review,Muse Spark 1.3 (medium),100,2
+Six-narrative assessor-readiness review,SSP narrative review,Claude 4.5 Haiku,100,2
+Six-narrative assessor-readiness review,SSP narrative review,Gemma 4 31B,100,2
+Access-control narrative client fit,SSP narrative review,GPT-6 Astra (medium),100,2
+Access-control narrative client fit,SSP narrative review,Claude Fable 5.1 (medium),100,1
+Access-control narrative client fit,SSP narrative review,Inkling (xhigh),100,1
+Access-control narrative client fit,SSP narrative review,GPT-5.6 Luna (medium),100,2
+Access-control narrative client fit,SSP narrative review,GLM-5.3-Flash,100,2
+Access-control narrative client fit,SSP narrative review,Gemini 3.5 Flash-Lite (medium),100,2
+Access-control narrative client fit,SSP narrative review,Muse Spark 1.3 (medium),100,2
+Access-control narrative client fit,SSP narrative review,Claude 4.5 Haiku,100,2
+Access-control narrative client fit,SSP narrative review,Gemma 4 31B,100,2
+Multi-client template contamination audit,SSP narrative review,GPT-6 Astra (medium),100,2
+Multi-client template contamination audit,SSP narrative review,Claude Fable 5.1 (medium),100,2
+Multi-client template contamination audit,SSP narrative review,Inkling (xhigh),100,2
+Multi-client template contamination audit,SSP narrative review,GPT-5.6 Luna (medium),100,2
+Multi-client template contamination audit,SSP narrative review,GLM-5.3-Flash,100,2
+Multi-client template contamination audit,SSP narrative review,Gemini 3.5 Flash-Lite (medium),100,2
+Multi-client template contamination audit,SSP narrative review,Muse Spark 1.3 (medium),100,2
+Multi-client template contamination audit,SSP narrative review,Claude 4.5 Haiku,100,2
+Multi-client template contamination audit,SSP narrative review,Gemma 4 31B,,0
+Helios clean-narrative validation,SSP narrative review,GPT-6 Astra (medium),0,2
+Helios clean-narrative validation,SSP narrative review,Claude Fable 5.1 (medium),50,2
+Helios clean-narrative validation,SSP narrative review,Inkling (xhigh),50,2
+Helios clean-narrative validation,SSP narrative review,GPT-5.6 Luna (medium),50,2
+Helios clean-narrative validation,SSP narrative review,GLM-5.3-Flash,0,1
+Helios clean-narrative validation,SSP narrative review,Gemini 3.5 Flash-Lite (medium),0,2
+Helios clean-narrative validation,SSP narrative review,Muse Spark 1.3 (medium),0,1
+Helios clean-narrative validation,SSP narrative review,Claude 4.5 Haiku,50,2
+Helios clean-narrative validation,SSP narrative review,Gemma 4 31B,0,2
+Tidewater MFA narrative drafting,SSP narrative review,GPT-6 Astra (medium),100,2
+Tidewater MFA narrative drafting,SSP narrative review,Claude Fable 5.1 (medium),0,2
+Tidewater MFA narrative drafting,SSP narrative review,Inkling (xhigh),,0
+Tidewater MFA narrative drafting,SSP narrative review,GPT-5.6 Luna (medium),100,2
+Tidewater MFA narrative drafting,SSP narrative review,GLM-5.3-Flash,50,2
+Tidewater MFA narrative drafting,SSP narrative review,Gemini 3.5 Flash-Lite (medium),0,2
+Tidewater MFA narrative drafting,SSP narrative review,Muse Spark 1.3 (medium),100,2
+Tidewater MFA narrative drafting,SSP narrative review,Claude 4.5 Haiku,0,2
+Tidewater MFA narrative drafting,SSP narrative review,Gemma 4 31B,0,2
+Tidewater mobile-control N/A narrative,SSP narrative review,GPT-6 Astra (medium),100,2
+Tidewater mobile-control N/A narrative,SSP narrative review,Claude Fable 5.1 (medium),100,2
+Tidewater mobile-control N/A narrative,SSP narrative review,Inkling (xhigh),100,2
+Tidewater mobile-control N/A narrative,SSP narrative review,GPT-5.6 Luna (medium),50,2
+Tidewater mobile-control N/A narrative,SSP narrative review,GLM-5.3-Flash,50,2
+Tidewater mobile-control N/A narrative,SSP narrative review,Gemini 3.5 Flash-Lite (medium),0,2
+Tidewater mobile-control N/A narrative,SSP narrative review,Muse Spark 1.3 (medium),50,2
+Tidewater mobile-control N/A narrative,SSP narrative review,Claude 4.5 Haiku,0,1
+Tidewater mobile-control N/A narrative,SSP narrative review,Gemma 4 31B,0,1
+Tidewater narrative-readiness triage,SSP narrative review,GPT-6 Astra (medium),50,2
+Tidewater narrative-readiness triage,SSP narrative review,Claude Fable 5.1 (medium),50,2
+Tidewater narrative-readiness triage,SSP narrative review,Inkling (xhigh),100,2
+Tidewater narrative-readiness triage,SSP narrative review,GPT-5.6 Luna (medium),100,2
+Tidewater narrative-readiness triage,SSP narrative review,GLM-5.3-Flash,,0
+Tidewater narrative-readiness triage,SSP narrative review,Gemini 3.5 Flash-Lite (medium),50,2
+Tidewater narrative-readiness triage,SSP narrative review,Muse Spark 1.3 (medium),50,2
+Tidewater narrative-readiness triage,SSP narrative review,Claude 4.5 Haiku,50,2
+Tidewater narrative-readiness triage,SSP narrative review,Gemma 4 31B,50,2
+University spinout intake and viability,Scoping and intake,GPT-6 Astra (medium),100,2
+University spinout intake and viability,Scoping and intake,Claude Fable 5.1 (medium),100,2
+University spinout intake and viability,Scoping and intake,Inkling (xhigh),100,2
+University spinout intake and viability,Scoping and intake,GPT-5.6 Luna (medium),100,2
+University spinout intake and viability,Scoping and intake,GLM-5.3-Flash,100,2
+University spinout intake and viability,Scoping and intake,Gemini 3.5 Flash-Lite (medium),50,1
+University spinout intake and viability,Scoping and intake,Muse Spark 1.3 (medium),100,2
+University spinout intake and viability,Scoping and intake,Claude 4.5 Haiku,75,2
+University spinout intake and viability,Scoping and intake,Gemma 4 31B,50,1
+Micro-contractor scope and remediation,Scoping and intake,GPT-6 Astra (medium),100,2
+Micro-contractor scope and remediation,Scoping and intake,Claude Fable 5.1 (medium),100,2
+Micro-contractor scope and remediation,Scoping and intake,Inkling (xhigh),100,2
+Micro-contractor scope and remediation,Scoping and intake,GPT-5.6 Luna (medium),100,2
+Micro-contractor scope and remediation,Scoping and intake,GLM-5.3-Flash,50,1
+Micro-contractor scope and remediation,Scoping and intake,Gemini 3.5 Flash-Lite (medium),100,2
+Micro-contractor scope and remediation,Scoping and intake,Muse Spark 1.3 (medium),100,2
+Micro-contractor scope and remediation,Scoping and intake,Claude 4.5 Haiku,50,1
+Micro-contractor scope and remediation,Scoping and intake,Gemma 4 31B,50,2
+Cloud-only subcontractor boundary,Scoping and intake,GPT-6 Astra (medium),50,1
+Cloud-only subcontractor boundary,Scoping and intake,Claude Fable 5.1 (medium),100,2
+Cloud-only subcontractor boundary,Scoping and intake,Inkling (xhigh),100,2
+Cloud-only subcontractor boundary,Scoping and intake,GPT-5.6 Luna (medium),100,2
+Cloud-only subcontractor boundary,Scoping and intake,GLM-5.3-Flash,50,2
+Cloud-only subcontractor boundary,Scoping and intake,Gemini 3.5 Flash-Lite (medium),50,2
+Cloud-only subcontractor boundary,Scoping and intake,Muse Spark 1.3 (medium),100,2
+Cloud-only subcontractor boundary,Scoping and intake,Claude 4.5 Haiku,50,1
+Cloud-only subcontractor boundary,Scoping and intake,Gemma 4 31B,50,2
+Mixed ITAR and CUI domain scoping,Scoping and intake,GPT-6 Astra (medium),100,2
+Mixed ITAR and CUI domain scoping,Scoping and intake,Claude Fable 5.1 (medium),100,2
+Mixed ITAR and CUI domain scoping,Scoping and intake,Inkling (xhigh),100,2
+Mixed ITAR and CUI domain scoping,Scoping and intake,GPT-5.6 Luna (medium),100,2
+Mixed ITAR and CUI domain scoping,Scoping and intake,GLM-5.3-Flash,100,2
+Mixed ITAR and CUI domain scoping,Scoping and intake,Gemini 3.5 Flash-Lite (medium),100,2
+Mixed ITAR and CUI domain scoping,Scoping and intake,Muse Spark 1.3 (medium),,0
+Mixed ITAR and CUI domain scoping,Scoping and intake,Claude 4.5 Haiku,100,2
+Mixed ITAR and CUI domain scoping,Scoping and intake,Gemma 4 31B,67,2
+Tidewater award-instrument determination,Scoping and intake,GPT-6 Astra (medium),100,2
+Tidewater award-instrument determination,Scoping and intake,Claude Fable 5.1 (medium),100,2
+Tidewater award-instrument determination,Scoping and intake,Inkling (xhigh),100,2
+Tidewater award-instrument determination,Scoping and intake,GPT-5.6 Luna (medium),100,2
+Tidewater award-instrument determination,Scoping and intake,GLM-5.3-Flash,100,2
+Tidewater award-instrument determination,Scoping and intake,Gemini 3.5 Flash-Lite (medium),50,2
+Tidewater award-instrument determination,Scoping and intake,Muse Spark 1.3 (medium),100,2
+Tidewater award-instrument determination,Scoping and intake,Claude 4.5 Haiku,50,1
+Tidewater award-instrument determination,Scoping and intake,Gemma 4 31B,50,1
+Tidewater personnel-access viability,Scoping and intake,GPT-6 Astra (medium),100,2
+Tidewater personnel-access viability,Scoping and intake,Claude Fable 5.1 (medium),100,2
+Tidewater personnel-access viability,Scoping and intake,Inkling (xhigh),100,1
+Tidewater personnel-access viability,Scoping and intake,GPT-5.6 Luna (medium),100,2
+Tidewater personnel-access viability,Scoping and intake,GLM-5.3-Flash,100,2
+Tidewater personnel-access viability,Scoping and intake,Gemini 3.5 Flash-Lite (medium),100,2
+Tidewater personnel-access viability,Scoping and intake,Muse Spark 1.3 (medium),100,1
+Tidewater personnel-access viability,Scoping and intake,Claude 4.5 Haiku,100,2
+Tidewater personnel-access viability,Scoping and intake,Gemma 4 31B,100,2
+Tidewater deliverable-as-evidence review,Scoping and intake,GPT-6 Astra (medium),100,2
+Tidewater deliverable-as-evidence review,Scoping and intake,Claude Fable 5.1 (medium),100,2
+Tidewater deliverable-as-evidence review,Scoping and intake,Inkling (xhigh),100,2
+Tidewater deliverable-as-evidence review,Scoping and intake,GPT-5.6 Luna (medium),50,2
+Tidewater deliverable-as-evidence review,Scoping and intake,GLM-5.3-Flash,50,1
+Tidewater deliverable-as-evidence review,Scoping and intake,Gemini 3.5 Flash-Lite (medium),100,2
+Tidewater deliverable-as-evidence review,Scoping and intake,Muse Spark 1.3 (medium),100,1
+Tidewater deliverable-as-evidence review,Scoping and intake,Claude 4.5 Haiku,50,2
+Tidewater deliverable-as-evidence review,Scoping and intake,Gemma 4 31B,50,2
+POA&M closeout recall check,Recall calibration,GPT-6 Astra (medium),100,2
+POA&M closeout recall check,Recall calibration,Claude Fable 5.1 (medium),100,1
+POA&M closeout recall check,Recall calibration,Inkling (xhigh),100,1
+POA&M closeout recall check,Recall calibration,GPT-5.6 Luna (medium),100,2
+POA&M closeout recall check,Recall calibration,GLM-5.3-Flash,100,2
+POA&M closeout recall check,Recall calibration,Gemini 3.5 Flash-Lite (medium),100,2
+POA&M closeout recall check,Recall calibration,Muse Spark 1.3 (medium),100,2
+POA&M closeout recall check,Recall calibration,Claude 4.5 Haiku,100,2
+POA&M closeout recall check,Recall calibration,Gemma 4 31B,100,2
+Assessment-cadence recall check,Recall calibration,GPT-6 Astra (medium),100,2
+Assessment-cadence recall check,Recall calibration,Claude Fable 5.1 (medium),100,2
+Assessment-cadence recall check,Recall calibration,Inkling (xhigh),100,2
+Assessment-cadence recall check,Recall calibration,GPT-5.6 Luna (medium),100,2
+Assessment-cadence recall check,Recall calibration,GLM-5.3-Flash,100,2
+Assessment-cadence recall check,Recall calibration,Gemini 3.5 Flash-Lite (medium),100,2
+Assessment-cadence recall check,Recall calibration,Muse Spark 1.3 (medium),100,2
+Assessment-cadence recall check,Recall calibration,Claude 4.5 Haiku,,0
+Assessment-cadence recall check,Recall calibration,Gemma 4 31B,100,2
+CMMC and NIST relationship recall,Recall calibration,GPT-6 Astra (medium),100,2
+CMMC and NIST relationship recall,Recall calibration,Claude Fable 5.1 (medium),100,1
+CMMC and NIST relationship recall,Recall calibration,Inkling (xhigh),100,1
+CMMC and NIST relationship recall,Recall calibration,GPT-5.6 Luna (medium),100,2
+CMMC and NIST relationship recall,Recall calibration,GLM-5.3-Flash,100,2
+CMMC and NIST relationship recall,Recall calibration,Gemini 3.5 Flash-Lite (medium),100,2
+CMMC and NIST relationship recall,Recall calibration,Muse Spark 1.3 (medium),100,2
+CMMC and NIST relationship recall,Recall calibration,Claude 4.5 Haiku,100,2
+CMMC and NIST relationship recall,Recall calibration,Gemma 4 31B,100,2
+CMMC level applicability recall,Recall calibration,GPT-6 Astra (medium),100,2
+CMMC level applicability recall,Recall calibration,Claude Fable 5.1 (medium),100,1
+CMMC level applicability recall,Recall calibration,Inkling (xhigh),100,1
+CMMC level applicability recall,Recall calibration,GPT-5.6 Luna (medium),100,2
+CMMC level applicability recall,Recall calibration,GLM-5.3-Flash,100,2
+CMMC level applicability recall,Recall calibration,Gemini 3.5 Flash-Lite (medium),100,2
+CMMC level applicability recall,Recall calibration,Muse Spark 1.3 (medium),100,2
+CMMC level applicability recall,Recall calibration,Claude 4.5 Haiku,100,2
+CMMC level applicability recall,Recall calibration,Gemma 4 31B,100,2
+Malicious-code protection recall,Recall calibration,GPT-6 Astra (medium),100,2
+Malicious-code protection recall,Recall calibration,Claude Fable 5.1 (medium),100,1
+Malicious-code protection recall,Recall calibration,Inkling (xhigh),100,1
+Malicious-code protection recall,Recall calibration,GPT-5.6 Luna (medium),100,2
+Malicious-code protection recall,Recall calibration,GLM-5.3-Flash,100,2
+Malicious-code protection recall,Recall calibration,Gemini 3.5 Flash-Lite (medium),100,2
+Malicious-code protection recall,Recall calibration,Muse Spark 1.3 (medium),100,2
+Malicious-code protection recall,Recall calibration,Claude 4.5 Haiku,100,2
+Malicious-code protection recall,Recall calibration,Gemma 4 31B,100,2

@@ -1,0 +1,2478 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "title": {
+  "text": "Where the models fail: score on each of the 36 tasks",
+  "subtitle": [
+   "CMMC Assessor Judgment \u00b7 Optima \u00b7 Oct 2026 \u00b7 mean of 2 attempts, 0\u2013100 \u00b7 columns sorted by overall score, hardest tasks first \u00b7 \u2014 = no response"
+  ],
+  "anchor": "start"
+ },
+ "vconcat": [
+  {
+   "title": {
+    "text": "SSP NARRATIVE REVIEW  \u00b7  mean 68",
+    "anchor": "start",
+    "fontSize": 10,
+    "fontWeight": "normal",
+    "color": "#635A4C",
+    "offset": 6
+   },
+   "data": {
+    "values": [
+     {
+      "task": "Six-narrative assessor-readiness review",
+      "model": "GPT-6 Astra",
+      "score": null,
+      "label": "\u2014"
+     },
+     {
+      "task": "Six-narrative assessor-readiness review",
+      "model": "Claude Fable 5.1",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Six-narrative assessor-readiness review",
+      "model": "Inkling",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Six-narrative assessor-readiness review",
+      "model": "GPT-5.6 Luna",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Six-narrative assessor-readiness review",
+      "model": "GLM-5.3-Flash",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Six-narrative assessor-readiness review",
+      "model": "Gemini 3.5 Flash-Lite",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Six-narrative assessor-readiness review",
+      "model": "Muse Spark 1.3",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Six-narrative assessor-readiness review",
+      "model": "Claude 4.5 Haiku",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Six-narrative assessor-readiness review",
+      "model": "Gemma 4 31B",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Access-control narrative client fit",
+      "model": "GPT-6 Astra",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Access-control narrative client fit",
+      "model": "Claude Fable 5.1",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Access-control narrative client fit",
+      "model": "Inkling",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Access-control narrative client fit",
+      "model": "GPT-5.6 Luna",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Access-control narrative client fit",
+      "model": "GLM-5.3-Flash",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Access-control narrative client fit",
+      "model": "Gemini 3.5 Flash-Lite",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Access-control narrative client fit",
+      "model": "Muse Spark 1.3",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Access-control narrative client fit",
+      "model": "Claude 4.5 Haiku",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Access-control narrative client fit",
+      "model": "Gemma 4 31B",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Multi-client template contamination audit",
+      "model": "GPT-6 Astra",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Multi-client template contamination audit",
+      "model": "Claude Fable 5.1",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Multi-client template contamination audit",
+      "model": "Inkling",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Multi-client template contamination audit",
+      "model": "GPT-5.6 Luna",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Multi-client template contamination audit",
+      "model": "GLM-5.3-Flash",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Multi-client template contamination audit",
+      "model": "Gemini 3.5 Flash-Lite",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Multi-client template contamination audit",
+      "model": "Muse Spark 1.3",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Multi-client template contamination audit",
+      "model": "Claude 4.5 Haiku",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Multi-client template contamination audit",
+      "model": "Gemma 4 31B",
+      "score": null,
+      "label": "\u2014"
+     },
+     {
+      "task": "Helios clean-narrative validation",
+      "model": "GPT-6 Astra",
+      "score": 0.0,
+      "label": "0"
+     },
+     {
+      "task": "Helios clean-narrative validation",
+      "model": "Claude Fable 5.1",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Helios clean-narrative validation",
+      "model": "Inkling",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Helios clean-narrative validation",
+      "model": "GPT-5.6 Luna",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Helios clean-narrative validation",
+      "model": "GLM-5.3-Flash",
+      "score": 0.0,
+      "label": "0"
+     },
+     {
+      "task": "Helios clean-narrative validation",
+      "model": "Gemini 3.5 Flash-Lite",
+      "score": 0.0,
+      "label": "0"
+     },
+     {
+      "task": "Helios clean-narrative validation",
+      "model": "Muse Spark 1.3",
+      "score": 0.0,
+      "label": "0"
+     },
+     {
+      "task": "Helios clean-narrative validation",
+      "model": "Claude 4.5 Haiku",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Helios clean-narrative validation",
+      "model": "Gemma 4 31B",
+      "score": 0.0,
+      "label": "0"
+     },
+     {
+      "task": "Tidewater MFA narrative drafting",
+      "model": "GPT-6 Astra",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Tidewater MFA narrative drafting",
+      "model": "Claude Fable 5.1",
+      "score": 0.0,
+      "label": "0"
+     },
+     {
+      "task": "Tidewater MFA narrative drafting",
+      "model": "Inkling",
+      "score": null,
+      "label": "\u2014"
+     },
+     {
+      "task": "Tidewater MFA narrative drafting",
+      "model": "GPT-5.6 Luna",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Tidewater MFA narrative drafting",
+      "model": "GLM-5.3-Flash",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Tidewater MFA narrative drafting",
+      "model": "Gemini 3.5 Flash-Lite",
+      "score": 0.0,
+      "label": "0"
+     },
+     {
+      "task": "Tidewater MFA narrative drafting",
+      "model": "Muse Spark 1.3",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Tidewater MFA narrative drafting",
+      "model": "Claude 4.5 Haiku",
+      "score": 0.0,
+      "label": "0"
+     },
+     {
+      "task": "Tidewater MFA narrative drafting",
+      "model": "Gemma 4 31B",
+      "score": 0.0,
+      "label": "0"
+     },
+     {
+      "task": "Tidewater mobile-control N/A narrative",
+      "model": "GPT-6 Astra",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Tidewater mobile-control N/A narrative",
+      "model": "Claude Fable 5.1",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Tidewater mobile-control N/A narrative",
+      "model": "Inkling",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Tidewater mobile-control N/A narrative",
+      "model": "GPT-5.6 Luna",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Tidewater mobile-control N/A narrative",
+      "model": "GLM-5.3-Flash",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Tidewater mobile-control N/A narrative",
+      "model": "Gemini 3.5 Flash-Lite",
+      "score": 0.0,
+      "label": "0"
+     },
+     {
+      "task": "Tidewater mobile-control N/A narrative",
+      "model": "Muse Spark 1.3",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Tidewater mobile-control N/A narrative",
+      "model": "Claude 4.5 Haiku",
+      "score": 0.0,
+      "label": "0"
+     },
+     {
+      "task": "Tidewater mobile-control N/A narrative",
+      "model": "Gemma 4 31B",
+      "score": 0.0,
+      "label": "0"
+     },
+     {
+      "task": "Tidewater narrative-readiness triage",
+      "model": "GPT-6 Astra",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Tidewater narrative-readiness triage",
+      "model": "Claude Fable 5.1",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Tidewater narrative-readiness triage",
+      "model": "Inkling",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Tidewater narrative-readiness triage",
+      "model": "GPT-5.6 Luna",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Tidewater narrative-readiness triage",
+      "model": "GLM-5.3-Flash",
+      "score": null,
+      "label": "\u2014"
+     },
+     {
+      "task": "Tidewater narrative-readiness triage",
+      "model": "Gemini 3.5 Flash-Lite",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Tidewater narrative-readiness triage",
+      "model": "Muse Spark 1.3",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Tidewater narrative-readiness triage",
+      "model": "Claude 4.5 Haiku",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Tidewater narrative-readiness triage",
+      "model": "Gemma 4 31B",
+      "score": 50.0,
+      "label": "50"
+     }
+    ]
+   },
+   "width": 540,
+   "height": {
+    "step": 17
+   },
+   "encoding": {
+    "x": {
+     "field": "model",
+     "type": "nominal",
+     "sort": [
+      "GPT-6 Astra",
+      "Claude Fable 5.1",
+      "Inkling",
+      "GPT-5.6 Luna",
+      "GLM-5.3-Flash",
+      "Gemini 3.5 Flash-Lite",
+      "Muse Spark 1.3",
+      "Claude 4.5 Haiku",
+      "Gemma 4 31B"
+     ],
+     "axis": {
+      "orient": "top",
+      "title": null,
+      "labelAngle": -35,
+      "labelAlign": "left",
+      "labelPadding": 4,
+      "domain": false,
+      "ticks": false,
+      "grid": false
+     }
+    },
+    "y": {
+     "field": "task",
+     "type": "nominal",
+     "sort": [
+      "Helios clean-narrative validation",
+      "Tidewater MFA narrative drafting",
+      "Tidewater mobile-control N/A narrative",
+      "Tidewater narrative-readiness triage",
+      "Six-narrative assessor-readiness review",
+      "Access-control narrative client fit",
+      "Multi-client template contamination audit"
+     ],
+     "axis": {
+      "title": null,
+      "domain": false,
+      "ticks": false,
+      "labelLimit": 240,
+      "grid": false
+     }
+    }
+   },
+   "layer": [
+    {
+     "mark": {
+      "type": "rect",
+      "stroke": "#FAF7F0",
+      "strokeWidth": 1.5
+     },
+     "encoding": {
+      "color": {
+       "field": "score",
+       "type": "quantitative",
+       "scale": {
+        "domain": [
+         0,
+         100
+        ],
+        "range": [
+         "#B14E26",
+         "#F6F2EA"
+        ]
+       },
+       "legend": null
+      }
+     }
+    },
+    {
+     "mark": {
+      "type": "text",
+      "fontSize": 9
+     },
+     "encoding": {
+      "text": {
+       "field": "label"
+      },
+      "color": {
+       "condition": {
+        "test": "datum.score == null || datum.score >= 50",
+        "value": "#44372F"
+       },
+       "value": "#FAF7F0"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": {
+    "text": "SPRS AND ELIGIBILITY  \u00b7  mean 75",
+    "anchor": "start",
+    "fontSize": 10,
+    "fontWeight": "normal",
+    "color": "#635A4C",
+    "offset": 6
+   },
+   "data": {
+    "values": [
+     {
+      "task": "All-controls-failed scoring baseline",
+      "model": "GPT-6 Astra",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "All-controls-failed scoring baseline",
+      "model": "Claude Fable 5.1",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "All-controls-failed scoring baseline",
+      "model": "Inkling",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "All-controls-failed scoring baseline",
+      "model": "GPT-5.6 Luna",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "All-controls-failed scoring baseline",
+      "model": "GLM-5.3-Flash",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "All-controls-failed scoring baseline",
+      "model": "Gemini 3.5 Flash-Lite",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "All-controls-failed scoring baseline",
+      "model": "Muse Spark 1.3",
+      "score": null,
+      "label": "\u2014"
+     },
+     {
+      "task": "All-controls-failed scoring baseline",
+      "model": "Claude 4.5 Haiku",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "All-controls-failed scoring baseline",
+      "model": "Gemma 4 31B",
+      "score": 0.0,
+      "label": "0"
+     },
+     {
+      "task": "Northstar partial-credit split",
+      "model": "GPT-6 Astra",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Northstar partial-credit split",
+      "model": "Claude Fable 5.1",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Northstar partial-credit split",
+      "model": "Inkling",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Northstar partial-credit split",
+      "model": "GPT-5.6 Luna",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Northstar partial-credit split",
+      "model": "GLM-5.3-Flash",
+      "score": null,
+      "label": "\u2014"
+     },
+     {
+      "task": "Northstar partial-credit split",
+      "model": "Gemini 3.5 Flash-Lite",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Northstar partial-credit split",
+      "model": "Muse Spark 1.3",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Northstar partial-credit split",
+      "model": "Claude 4.5 Haiku",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Northstar partial-credit split",
+      "model": "Gemma 4 31B",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Summit zero-point SSP blocker",
+      "model": "GPT-6 Astra",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Summit zero-point SSP blocker",
+      "model": "Claude Fable 5.1",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Summit zero-point SSP blocker",
+      "model": "Inkling",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Summit zero-point SSP blocker",
+      "model": "GPT-5.6 Luna",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Summit zero-point SSP blocker",
+      "model": "GLM-5.3-Flash",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Summit zero-point SSP blocker",
+      "model": "Gemini 3.5 Flash-Lite",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Summit zero-point SSP blocker",
+      "model": "Muse Spark 1.3",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Summit zero-point SSP blocker",
+      "model": "Claude 4.5 Haiku",
+      "score": 0.0,
+      "label": "0"
+     },
+     {
+      "task": "Summit zero-point SSP blocker",
+      "model": "Gemma 4 31B",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Summit 3.1.4 weight override",
+      "model": "GPT-6 Astra",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Summit 3.1.4 weight override",
+      "model": "Claude Fable 5.1",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Summit 3.1.4 weight override",
+      "model": "Inkling",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Summit 3.1.4 weight override",
+      "model": "GPT-5.6 Luna",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Summit 3.1.4 weight override",
+      "model": "GLM-5.3-Flash",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Summit 3.1.4 weight override",
+      "model": "Gemini 3.5 Flash-Lite",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Summit 3.1.4 weight override",
+      "model": "Muse Spark 1.3",
+      "score": null,
+      "label": "\u2014"
+     },
+     {
+      "task": "Summit 3.1.4 weight override",
+      "model": "Claude 4.5 Haiku",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Summit 3.1.4 weight override",
+      "model": "Gemma 4 31B",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Acme unknowns and conditional status",
+      "model": "GPT-6 Astra",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Acme unknowns and conditional status",
+      "model": "Claude Fable 5.1",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Acme unknowns and conditional status",
+      "model": "Inkling",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Acme unknowns and conditional status",
+      "model": "GPT-5.6 Luna",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Acme unknowns and conditional status",
+      "model": "GLM-5.3-Flash",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Acme unknowns and conditional status",
+      "model": "Gemini 3.5 Flash-Lite",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Acme unknowns and conditional status",
+      "model": "Muse Spark 1.3",
+      "score": null,
+      "label": "\u2014"
+     },
+     {
+      "task": "Acme unknowns and conditional status",
+      "model": "Claude 4.5 Haiku",
+      "score": 0.0,
+      "label": "0"
+     },
+     {
+      "task": "Acme unknowns and conditional status",
+      "model": "Gemma 4 31B",
+      "score": 0.0,
+      "label": "0"
+     },
+     {
+      "task": "Helios score under unknowns",
+      "model": "GPT-6 Astra",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Helios score under unknowns",
+      "model": "Claude Fable 5.1",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Helios score under unknowns",
+      "model": "Inkling",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Helios score under unknowns",
+      "model": "GPT-5.6 Luna",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Helios score under unknowns",
+      "model": "GLM-5.3-Flash",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Helios score under unknowns",
+      "model": "Gemini 3.5 Flash-Lite",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Helios score under unknowns",
+      "model": "Muse Spark 1.3",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Helios score under unknowns",
+      "model": "Claude 4.5 Haiku",
+      "score": 0.0,
+      "label": "0"
+     },
+     {
+      "task": "Helios score under unknowns",
+      "model": "Gemma 4 31B",
+      "score": 0.0,
+      "label": "0"
+     },
+     {
+      "task": "Helios POA&M chain determination",
+      "model": "GPT-6 Astra",
+      "score": 0.0,
+      "label": "0"
+     },
+     {
+      "task": "Helios POA&M chain determination",
+      "model": "Claude Fable 5.1",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Helios POA&M chain determination",
+      "model": "Inkling",
+      "score": null,
+      "label": "\u2014"
+     },
+     {
+      "task": "Helios POA&M chain determination",
+      "model": "GPT-5.6 Luna",
+      "score": 0.0,
+      "label": "0"
+     },
+     {
+      "task": "Helios POA&M chain determination",
+      "model": "GLM-5.3-Flash",
+      "score": 0.0,
+      "label": "0"
+     },
+     {
+      "task": "Helios POA&M chain determination",
+      "model": "Gemini 3.5 Flash-Lite",
+      "score": 0.0,
+      "label": "0"
+     },
+     {
+      "task": "Helios POA&M chain determination",
+      "model": "Muse Spark 1.3",
+      "score": 0.0,
+      "label": "0"
+     },
+     {
+      "task": "Helios POA&M chain determination",
+      "model": "Claude 4.5 Haiku",
+      "score": 0.0,
+      "label": "0"
+     },
+     {
+      "task": "Helios POA&M chain determination",
+      "model": "Gemma 4 31B",
+      "score": 0.0,
+      "label": "0"
+     },
+     {
+      "task": "Harbor POA&M validity audit",
+      "model": "GPT-6 Astra",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Harbor POA&M validity audit",
+      "model": "Claude Fable 5.1",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Harbor POA&M validity audit",
+      "model": "Inkling",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Harbor POA&M validity audit",
+      "model": "GPT-5.6 Luna",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Harbor POA&M validity audit",
+      "model": "GLM-5.3-Flash",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Harbor POA&M validity audit",
+      "model": "Gemini 3.5 Flash-Lite",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Harbor POA&M validity audit",
+      "model": "Muse Spark 1.3",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Harbor POA&M validity audit",
+      "model": "Claude 4.5 Haiku",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Harbor POA&M validity audit",
+      "model": "Gemma 4 31B",
+      "score": null,
+      "label": "\u2014"
+     },
+     {
+      "task": "Tidewater full-register sign-off",
+      "model": "GPT-6 Astra",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Tidewater full-register sign-off",
+      "model": "Claude Fable 5.1",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Tidewater full-register sign-off",
+      "model": "Inkling",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Tidewater full-register sign-off",
+      "model": "GPT-5.6 Luna",
+      "score": 0.0,
+      "label": "0"
+     },
+     {
+      "task": "Tidewater full-register sign-off",
+      "model": "GLM-5.3-Flash",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Tidewater full-register sign-off",
+      "model": "Gemini 3.5 Flash-Lite",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Tidewater full-register sign-off",
+      "model": "Muse Spark 1.3",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Tidewater full-register sign-off",
+      "model": "Claude 4.5 Haiku",
+      "score": 0.0,
+      "label": "0"
+     },
+     {
+      "task": "Tidewater full-register sign-off",
+      "model": "Gemma 4 31B",
+      "score": 0.0,
+      "label": "0"
+     }
+    ]
+   },
+   "width": 540,
+   "height": {
+    "step": 17
+   },
+   "encoding": {
+    "x": {
+     "field": "model",
+     "type": "nominal",
+     "sort": [
+      "GPT-6 Astra",
+      "Claude Fable 5.1",
+      "Inkling",
+      "GPT-5.6 Luna",
+      "GLM-5.3-Flash",
+      "Gemini 3.5 Flash-Lite",
+      "Muse Spark 1.3",
+      "Claude 4.5 Haiku",
+      "Gemma 4 31B"
+     ],
+     "axis": null
+    },
+    "y": {
+     "field": "task",
+     "type": "nominal",
+     "sort": [
+      "Helios POA&M chain determination",
+      "Tidewater full-register sign-off",
+      "Acme unknowns and conditional status",
+      "Helios score under unknowns",
+      "All-controls-failed scoring baseline",
+      "Summit zero-point SSP blocker",
+      "Northstar partial-credit split",
+      "Summit 3.1.4 weight override",
+      "Harbor POA&M validity audit"
+     ],
+     "axis": {
+      "title": null,
+      "domain": false,
+      "ticks": false,
+      "labelLimit": 240,
+      "grid": false
+     }
+    }
+   },
+   "layer": [
+    {
+     "mark": {
+      "type": "rect",
+      "stroke": "#FAF7F0",
+      "strokeWidth": 1.5
+     },
+     "encoding": {
+      "color": {
+       "field": "score",
+       "type": "quantitative",
+       "scale": {
+        "domain": [
+         0,
+         100
+        ],
+        "range": [
+         "#B14E26",
+         "#F6F2EA"
+        ]
+       },
+       "legend": null
+      }
+     }
+    },
+    {
+     "mark": {
+      "type": "text",
+      "fontSize": 9
+     },
+     "encoding": {
+      "text": {
+       "field": "label"
+      },
+      "color": {
+       "condition": {
+        "test": "datum.score == null || datum.score >= 50",
+        "value": "#44372F"
+       },
+       "value": "#FAF7F0"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": {
+    "text": "ASSESSOR WORK AUDIT  \u00b7  mean 81",
+    "anchor": "start",
+    "fontSize": 10,
+    "fontWeight": "normal",
+    "color": "#635A4C",
+    "offset": 6
+   },
+   "data": {
+    "values": [
+     {
+      "task": "Gap matrix weight-column audit",
+      "model": "GPT-6 Astra",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Gap matrix weight-column audit",
+      "model": "Claude Fable 5.1",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Gap matrix weight-column audit",
+      "model": "Inkling",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Gap matrix weight-column audit",
+      "model": "GPT-5.6 Luna",
+      "score": 25.0,
+      "label": "25"
+     },
+     {
+      "task": "Gap matrix weight-column audit",
+      "model": "GLM-5.3-Flash",
+      "score": 25.0,
+      "label": "25"
+     },
+     {
+      "task": "Gap matrix weight-column audit",
+      "model": "Gemini 3.5 Flash-Lite",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Gap matrix weight-column audit",
+      "model": "Muse Spark 1.3",
+      "score": null,
+      "label": "\u2014"
+     },
+     {
+      "task": "Gap matrix weight-column audit",
+      "model": "Claude 4.5 Haiku",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Gap matrix weight-column audit",
+      "model": "Gemma 4 31B",
+      "score": 25.0,
+      "label": "25"
+     },
+     {
+      "task": "Gap matrix partial-credit audit",
+      "model": "GPT-6 Astra",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Gap matrix partial-credit audit",
+      "model": "Claude Fable 5.1",
+      "score": null,
+      "label": "\u2014"
+     },
+     {
+      "task": "Gap matrix partial-credit audit",
+      "model": "Inkling",
+      "score": 75.0,
+      "label": "75"
+     },
+     {
+      "task": "Gap matrix partial-credit audit",
+      "model": "GPT-5.6 Luna",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Gap matrix partial-credit audit",
+      "model": "GLM-5.3-Flash",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Gap matrix partial-credit audit",
+      "model": "Gemini 3.5 Flash-Lite",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Gap matrix partial-credit audit",
+      "model": "Muse Spark 1.3",
+      "score": 75.0,
+      "label": "75"
+     },
+     {
+      "task": "Gap matrix partial-credit audit",
+      "model": "Claude 4.5 Haiku",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Gap matrix partial-credit audit",
+      "model": "Gemma 4 31B",
+      "score": 75.0,
+      "label": "75"
+     },
+     {
+      "task": "Marlin score reconciliation",
+      "model": "GPT-6 Astra",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Marlin score reconciliation",
+      "model": "Claude Fable 5.1",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Marlin score reconciliation",
+      "model": "Inkling",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Marlin score reconciliation",
+      "model": "GPT-5.6 Luna",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Marlin score reconciliation",
+      "model": "GLM-5.3-Flash",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Marlin score reconciliation",
+      "model": "Gemini 3.5 Flash-Lite",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Marlin score reconciliation",
+      "model": "Muse Spark 1.3",
+      "score": null,
+      "label": "\u2014"
+     },
+     {
+      "task": "Marlin score reconciliation",
+      "model": "Claude 4.5 Haiku",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Marlin score reconciliation",
+      "model": "Gemma 4 31B",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Clean audit of critical MFA finding",
+      "model": "GPT-6 Astra",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Clean audit of critical MFA finding",
+      "model": "Claude Fable 5.1",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Clean audit of critical MFA finding",
+      "model": "Inkling",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Clean audit of critical MFA finding",
+      "model": "GPT-5.6 Luna",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Clean audit of critical MFA finding",
+      "model": "GLM-5.3-Flash",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Clean audit of critical MFA finding",
+      "model": "Gemini 3.5 Flash-Lite",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Clean audit of critical MFA finding",
+      "model": "Muse Spark 1.3",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Clean audit of critical MFA finding",
+      "model": "Claude 4.5 Haiku",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Clean audit of critical MFA finding",
+      "model": "Gemma 4 31B",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "POA&M tracker arithmetic reconciliation",
+      "model": "GPT-6 Astra",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "POA&M tracker arithmetic reconciliation",
+      "model": "Claude Fable 5.1",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "POA&M tracker arithmetic reconciliation",
+      "model": "Inkling",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "POA&M tracker arithmetic reconciliation",
+      "model": "GPT-5.6 Luna",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "POA&M tracker arithmetic reconciliation",
+      "model": "GLM-5.3-Flash",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "POA&M tracker arithmetic reconciliation",
+      "model": "Gemini 3.5 Flash-Lite",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "POA&M tracker arithmetic reconciliation",
+      "model": "Muse Spark 1.3",
+      "score": null,
+      "label": "\u2014"
+     },
+     {
+      "task": "POA&M tracker arithmetic reconciliation",
+      "model": "Claude 4.5 Haiku",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "POA&M tracker arithmetic reconciliation",
+      "model": "Gemma 4 31B",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "POA&M tracker eligibility audit",
+      "model": "GPT-6 Astra",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "POA&M tracker eligibility audit",
+      "model": "Claude Fable 5.1",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "POA&M tracker eligibility audit",
+      "model": "Inkling",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "POA&M tracker eligibility audit",
+      "model": "GPT-5.6 Luna",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "POA&M tracker eligibility audit",
+      "model": "GLM-5.3-Flash",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "POA&M tracker eligibility audit",
+      "model": "Gemini 3.5 Flash-Lite",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "POA&M tracker eligibility audit",
+      "model": "Muse Spark 1.3",
+      "score": null,
+      "label": "\u2014"
+     },
+     {
+      "task": "POA&M tracker eligibility audit",
+      "model": "Claude 4.5 Haiku",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "POA&M tracker eligibility audit",
+      "model": "Gemma 4 31B",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "POA&M tracker point-value audit",
+      "model": "GPT-6 Astra",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "POA&M tracker point-value audit",
+      "model": "Claude Fable 5.1",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "POA&M tracker point-value audit",
+      "model": "Inkling",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "POA&M tracker point-value audit",
+      "model": "GPT-5.6 Luna",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "POA&M tracker point-value audit",
+      "model": "GLM-5.3-Flash",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "POA&M tracker point-value audit",
+      "model": "Gemini 3.5 Flash-Lite",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "POA&M tracker point-value audit",
+      "model": "Muse Spark 1.3",
+      "score": null,
+      "label": "\u2014"
+     },
+     {
+      "task": "POA&M tracker point-value audit",
+      "model": "Claude 4.5 Haiku",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "POA&M tracker point-value audit",
+      "model": "Gemma 4 31B",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Consolidated Marlin diligence audit",
+      "model": "GPT-6 Astra",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Consolidated Marlin diligence audit",
+      "model": "Claude Fable 5.1",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Consolidated Marlin diligence audit",
+      "model": "Inkling",
+      "score": 67.0,
+      "label": "67"
+     },
+     {
+      "task": "Consolidated Marlin diligence audit",
+      "model": "GPT-5.6 Luna",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Consolidated Marlin diligence audit",
+      "model": "GLM-5.3-Flash",
+      "score": 0.0,
+      "label": "0"
+     },
+     {
+      "task": "Consolidated Marlin diligence audit",
+      "model": "Gemini 3.5 Flash-Lite",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Consolidated Marlin diligence audit",
+      "model": "Muse Spark 1.3",
+      "score": 67.0,
+      "label": "67"
+     },
+     {
+      "task": "Consolidated Marlin diligence audit",
+      "model": "Claude 4.5 Haiku",
+      "score": 17.0,
+      "label": "17"
+     },
+     {
+      "task": "Consolidated Marlin diligence audit",
+      "model": "Gemma 4 31B",
+      "score": 0.0,
+      "label": "0"
+     }
+    ]
+   },
+   "width": 540,
+   "height": {
+    "step": 17
+   },
+   "encoding": {
+    "x": {
+     "field": "model",
+     "type": "nominal",
+     "sort": [
+      "GPT-6 Astra",
+      "Claude Fable 5.1",
+      "Inkling",
+      "GPT-5.6 Luna",
+      "GLM-5.3-Flash",
+      "Gemini 3.5 Flash-Lite",
+      "Muse Spark 1.3",
+      "Claude 4.5 Haiku",
+      "Gemma 4 31B"
+     ],
+     "axis": null
+    },
+    "y": {
+     "field": "task",
+     "type": "nominal",
+     "sort": [
+      "Consolidated Marlin diligence audit",
+      "Gap matrix weight-column audit",
+      "Marlin score reconciliation",
+      "Gap matrix partial-credit audit",
+      "POA&M tracker eligibility audit",
+      "POA&M tracker arithmetic reconciliation",
+      "POA&M tracker point-value audit",
+      "Clean audit of critical MFA finding"
+     ],
+     "axis": {
+      "title": null,
+      "domain": false,
+      "ticks": false,
+      "labelLimit": 240,
+      "grid": false
+     }
+    }
+   },
+   "layer": [
+    {
+     "mark": {
+      "type": "rect",
+      "stroke": "#FAF7F0",
+      "strokeWidth": 1.5
+     },
+     "encoding": {
+      "color": {
+       "field": "score",
+       "type": "quantitative",
+       "scale": {
+        "domain": [
+         0,
+         100
+        ],
+        "range": [
+         "#B14E26",
+         "#F6F2EA"
+        ]
+       },
+       "legend": null
+      }
+     }
+    },
+    {
+     "mark": {
+      "type": "text",
+      "fontSize": 9
+     },
+     "encoding": {
+      "text": {
+       "field": "label"
+      },
+      "color": {
+       "condition": {
+        "test": "datum.score == null || datum.score >= 50",
+        "value": "#44372F"
+       },
+       "value": "#FAF7F0"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": {
+    "text": "SCOPING AND INTAKE  \u00b7  mean 85",
+    "anchor": "start",
+    "fontSize": 10,
+    "fontWeight": "normal",
+    "color": "#635A4C",
+    "offset": 6
+   },
+   "data": {
+    "values": [
+     {
+      "task": "University spinout intake and viability",
+      "model": "GPT-6 Astra",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "University spinout intake and viability",
+      "model": "Claude Fable 5.1",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "University spinout intake and viability",
+      "model": "Inkling",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "University spinout intake and viability",
+      "model": "GPT-5.6 Luna",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "University spinout intake and viability",
+      "model": "GLM-5.3-Flash",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "University spinout intake and viability",
+      "model": "Gemini 3.5 Flash-Lite",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "University spinout intake and viability",
+      "model": "Muse Spark 1.3",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "University spinout intake and viability",
+      "model": "Claude 4.5 Haiku",
+      "score": 75.0,
+      "label": "75"
+     },
+     {
+      "task": "University spinout intake and viability",
+      "model": "Gemma 4 31B",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Micro-contractor scope and remediation",
+      "model": "GPT-6 Astra",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Micro-contractor scope and remediation",
+      "model": "Claude Fable 5.1",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Micro-contractor scope and remediation",
+      "model": "Inkling",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Micro-contractor scope and remediation",
+      "model": "GPT-5.6 Luna",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Micro-contractor scope and remediation",
+      "model": "GLM-5.3-Flash",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Micro-contractor scope and remediation",
+      "model": "Gemini 3.5 Flash-Lite",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Micro-contractor scope and remediation",
+      "model": "Muse Spark 1.3",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Micro-contractor scope and remediation",
+      "model": "Claude 4.5 Haiku",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Micro-contractor scope and remediation",
+      "model": "Gemma 4 31B",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Cloud-only subcontractor boundary",
+      "model": "GPT-6 Astra",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Cloud-only subcontractor boundary",
+      "model": "Claude Fable 5.1",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Cloud-only subcontractor boundary",
+      "model": "Inkling",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Cloud-only subcontractor boundary",
+      "model": "GPT-5.6 Luna",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Cloud-only subcontractor boundary",
+      "model": "GLM-5.3-Flash",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Cloud-only subcontractor boundary",
+      "model": "Gemini 3.5 Flash-Lite",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Cloud-only subcontractor boundary",
+      "model": "Muse Spark 1.3",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Cloud-only subcontractor boundary",
+      "model": "Claude 4.5 Haiku",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Cloud-only subcontractor boundary",
+      "model": "Gemma 4 31B",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Mixed ITAR and CUI domain scoping",
+      "model": "GPT-6 Astra",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Mixed ITAR and CUI domain scoping",
+      "model": "Claude Fable 5.1",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Mixed ITAR and CUI domain scoping",
+      "model": "Inkling",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Mixed ITAR and CUI domain scoping",
+      "model": "GPT-5.6 Luna",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Mixed ITAR and CUI domain scoping",
+      "model": "GLM-5.3-Flash",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Mixed ITAR and CUI domain scoping",
+      "model": "Gemini 3.5 Flash-Lite",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Mixed ITAR and CUI domain scoping",
+      "model": "Muse Spark 1.3",
+      "score": null,
+      "label": "\u2014"
+     },
+     {
+      "task": "Mixed ITAR and CUI domain scoping",
+      "model": "Claude 4.5 Haiku",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Mixed ITAR and CUI domain scoping",
+      "model": "Gemma 4 31B",
+      "score": 67.0,
+      "label": "67"
+     },
+     {
+      "task": "Tidewater award-instrument determination",
+      "model": "GPT-6 Astra",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Tidewater award-instrument determination",
+      "model": "Claude Fable 5.1",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Tidewater award-instrument determination",
+      "model": "Inkling",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Tidewater award-instrument determination",
+      "model": "GPT-5.6 Luna",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Tidewater award-instrument determination",
+      "model": "GLM-5.3-Flash",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Tidewater award-instrument determination",
+      "model": "Gemini 3.5 Flash-Lite",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Tidewater award-instrument determination",
+      "model": "Muse Spark 1.3",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Tidewater award-instrument determination",
+      "model": "Claude 4.5 Haiku",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Tidewater award-instrument determination",
+      "model": "Gemma 4 31B",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Tidewater personnel-access viability",
+      "model": "GPT-6 Astra",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Tidewater personnel-access viability",
+      "model": "Claude Fable 5.1",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Tidewater personnel-access viability",
+      "model": "Inkling",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Tidewater personnel-access viability",
+      "model": "GPT-5.6 Luna",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Tidewater personnel-access viability",
+      "model": "GLM-5.3-Flash",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Tidewater personnel-access viability",
+      "model": "Gemini 3.5 Flash-Lite",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Tidewater personnel-access viability",
+      "model": "Muse Spark 1.3",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Tidewater personnel-access viability",
+      "model": "Claude 4.5 Haiku",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Tidewater personnel-access viability",
+      "model": "Gemma 4 31B",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Tidewater deliverable-as-evidence review",
+      "model": "GPT-6 Astra",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Tidewater deliverable-as-evidence review",
+      "model": "Claude Fable 5.1",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Tidewater deliverable-as-evidence review",
+      "model": "Inkling",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Tidewater deliverable-as-evidence review",
+      "model": "GPT-5.6 Luna",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Tidewater deliverable-as-evidence review",
+      "model": "GLM-5.3-Flash",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Tidewater deliverable-as-evidence review",
+      "model": "Gemini 3.5 Flash-Lite",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Tidewater deliverable-as-evidence review",
+      "model": "Muse Spark 1.3",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Tidewater deliverable-as-evidence review",
+      "model": "Claude 4.5 Haiku",
+      "score": 50.0,
+      "label": "50"
+     },
+     {
+      "task": "Tidewater deliverable-as-evidence review",
+      "model": "Gemma 4 31B",
+      "score": 50.0,
+      "label": "50"
+     }
+    ]
+   },
+   "width": 540,
+   "height": {
+    "step": 17
+   },
+   "encoding": {
+    "x": {
+     "field": "model",
+     "type": "nominal",
+     "sort": [
+      "GPT-6 Astra",
+      "Claude Fable 5.1",
+      "Inkling",
+      "GPT-5.6 Luna",
+      "GLM-5.3-Flash",
+      "Gemini 3.5 Flash-Lite",
+      "Muse Spark 1.3",
+      "Claude 4.5 Haiku",
+      "Gemma 4 31B"
+     ],
+     "axis": null
+    },
+    "y": {
+     "field": "task",
+     "type": "nominal",
+     "sort": [
+      "Cloud-only subcontractor boundary",
+      "Tidewater deliverable-as-evidence review",
+      "Micro-contractor scope and remediation",
+      "Tidewater award-instrument determination",
+      "University spinout intake and viability",
+      "Mixed ITAR and CUI domain scoping",
+      "Tidewater personnel-access viability"
+     ],
+     "axis": {
+      "title": null,
+      "domain": false,
+      "ticks": false,
+      "labelLimit": 240,
+      "grid": false
+     }
+    }
+   },
+   "layer": [
+    {
+     "mark": {
+      "type": "rect",
+      "stroke": "#FAF7F0",
+      "strokeWidth": 1.5
+     },
+     "encoding": {
+      "color": {
+       "field": "score",
+       "type": "quantitative",
+       "scale": {
+        "domain": [
+         0,
+         100
+        ],
+        "range": [
+         "#B14E26",
+         "#F6F2EA"
+        ]
+       },
+       "legend": null
+      }
+     }
+    },
+    {
+     "mark": {
+      "type": "text",
+      "fontSize": 9
+     },
+     "encoding": {
+      "text": {
+       "field": "label"
+      },
+      "color": {
+       "condition": {
+        "test": "datum.score == null || datum.score >= 50",
+        "value": "#44372F"
+       },
+       "value": "#FAF7F0"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "title": {
+    "text": "RECALL CALIBRATION  \u00b7  mean 100",
+    "anchor": "start",
+    "fontSize": 10,
+    "fontWeight": "normal",
+    "color": "#635A4C",
+    "offset": 6
+   },
+   "data": {
+    "values": [
+     {
+      "task": "POA&M closeout recall check",
+      "model": "GPT-6 Astra",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "POA&M closeout recall check",
+      "model": "Claude Fable 5.1",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "POA&M closeout recall check",
+      "model": "Inkling",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "POA&M closeout recall check",
+      "model": "GPT-5.6 Luna",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "POA&M closeout recall check",
+      "model": "GLM-5.3-Flash",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "POA&M closeout recall check",
+      "model": "Gemini 3.5 Flash-Lite",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "POA&M closeout recall check",
+      "model": "Muse Spark 1.3",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "POA&M closeout recall check",
+      "model": "Claude 4.5 Haiku",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "POA&M closeout recall check",
+      "model": "Gemma 4 31B",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Assessment-cadence recall check",
+      "model": "GPT-6 Astra",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Assessment-cadence recall check",
+      "model": "Claude Fable 5.1",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Assessment-cadence recall check",
+      "model": "Inkling",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Assessment-cadence recall check",
+      "model": "GPT-5.6 Luna",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Assessment-cadence recall check",
+      "model": "GLM-5.3-Flash",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Assessment-cadence recall check",
+      "model": "Gemini 3.5 Flash-Lite",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Assessment-cadence recall check",
+      "model": "Muse Spark 1.3",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Assessment-cadence recall check",
+      "model": "Claude 4.5 Haiku",
+      "score": null,
+      "label": "\u2014"
+     },
+     {
+      "task": "Assessment-cadence recall check",
+      "model": "Gemma 4 31B",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "CMMC and NIST relationship recall",
+      "model": "GPT-6 Astra",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "CMMC and NIST relationship recall",
+      "model": "Claude Fable 5.1",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "CMMC and NIST relationship recall",
+      "model": "Inkling",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "CMMC and NIST relationship recall",
+      "model": "GPT-5.6 Luna",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "CMMC and NIST relationship recall",
+      "model": "GLM-5.3-Flash",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "CMMC and NIST relationship recall",
+      "model": "Gemini 3.5 Flash-Lite",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "CMMC and NIST relationship recall",
+      "model": "Muse Spark 1.3",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "CMMC and NIST relationship recall",
+      "model": "Claude 4.5 Haiku",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "CMMC and NIST relationship recall",
+      "model": "Gemma 4 31B",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "CMMC level applicability recall",
+      "model": "GPT-6 Astra",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "CMMC level applicability recall",
+      "model": "Claude Fable 5.1",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "CMMC level applicability recall",
+      "model": "Inkling",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "CMMC level applicability recall",
+      "model": "GPT-5.6 Luna",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "CMMC level applicability recall",
+      "model": "GLM-5.3-Flash",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "CMMC level applicability recall",
+      "model": "Gemini 3.5 Flash-Lite",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "CMMC level applicability recall",
+      "model": "Muse Spark 1.3",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "CMMC level applicability recall",
+      "model": "Claude 4.5 Haiku",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "CMMC level applicability recall",
+      "model": "Gemma 4 31B",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Malicious-code protection recall",
+      "model": "GPT-6 Astra",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Malicious-code protection recall",
+      "model": "Claude Fable 5.1",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Malicious-code protection recall",
+      "model": "Inkling",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Malicious-code protection recall",
+      "model": "GPT-5.6 Luna",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Malicious-code protection recall",
+      "model": "GLM-5.3-Flash",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Malicious-code protection recall",
+      "model": "Gemini 3.5 Flash-Lite",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Malicious-code protection recall",
+      "model": "Muse Spark 1.3",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Malicious-code protection recall",
+      "model": "Claude 4.5 Haiku",
+      "score": 100.0,
+      "label": "100"
+     },
+     {
+      "task": "Malicious-code protection recall",
+      "model": "Gemma 4 31B",
+      "score": 100.0,
+      "label": "100"
+     }
+    ]
+   },
+   "width": 540,
+   "height": {
+    "step": 17
+   },
+   "encoding": {
+    "x": {
+     "field": "model",
+     "type": "nominal",
+     "sort": [
+      "GPT-6 Astra",
+      "Claude Fable 5.1",
+      "Inkling",
+      "GPT-5.6 Luna",
+      "GLM-5.3-Flash",
+      "Gemini 3.5 Flash-Lite",
+      "Muse Spark 1.3",
+      "Claude 4.5 Haiku",
+      "Gemma 4 31B"
+     ],
+     "axis": null
+    },
+    "y": {
+     "field": "task",
+     "type": "nominal",
+     "sort": [
+      "POA&M closeout recall check",
+      "Assessment-cadence recall check",
+      "CMMC and NIST relationship recall",
+      "CMMC level applicability recall",
+      "Malicious-code protection recall"
+     ],
+     "axis": {
+      "title": null,
+      "domain": false,
+      "ticks": false,
+      "labelLimit": 240,
+      "grid": false
+     }
+    }
+   },
+   "layer": [
+    {
+     "mark": {
+      "type": "rect",
+      "stroke": "#FAF7F0",
+      "strokeWidth": 1.5
+     },
+     "encoding": {
+      "color": {
+       "field": "score",
+       "type": "quantitative",
+       "scale": {
+        "domain": [
+         0,
+         100
+        ],
+        "range": [
+         "#B14E26",
+         "#F6F2EA"
+        ]
+       },
+       "legend": null
+      }
+     }
+    },
+    {
+     "mark": {
+      "type": "text",
+      "fontSize": 9
+     },
+     "encoding": {
+      "text": {
+       "field": "label"
+      },
+      "color": {
+       "condition": {
+        "test": "datum.score == null || datum.score >= 50",
+        "value": "#44372F"
+       },
+       "value": "#FAF7F0"
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "spacing": 14,
+ "resolve": {
+  "scale": {
+   "x": "shared",
+   "color": "shared"
+  }
+ },
+ "config": {
+  "view": {
+   "stroke": null
+  }
+ }
+}

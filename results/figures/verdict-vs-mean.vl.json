@@ -1,0 +1,508 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "title": {
+  "text": "Getting the verdict right vs getting the details right",
+  "subtitle": [
+   "Correct determination rate = share of tasks where the model's core call (eligible, score, acceptable) was right.",
+   "Above the line: better at the verdict than the mean score suggests. CMMC Assessor Judgment \u00b7 Optima \u00b7 Oct 2026"
+  ],
+  "anchor": "start"
+ },
+ "width": 520,
+ "height": 400,
+ "layer": [
+  {
+   "data": {
+    "values": [
+     {
+      "x": 50,
+      "y": 50
+     },
+     {
+      "x": 95,
+      "y": 95
+     }
+    ]
+   },
+   "mark": {
+    "type": "line",
+    "stroke": "#D9D0BF",
+    "strokeDash": [
+     4,
+     4
+    ]
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       50,
+       95
+      ],
+      "nice": false
+     }
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       50,
+       95
+      ],
+      "nice": false
+     }
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "model": "GPT-6 Astra",
+      "mean": 89.9,
+      "cdr": 89.8,
+      "cost": 0.1302
+     },
+     {
+      "model": "Claude Fable 5.1",
+      "mean": 88.4,
+      "cdr": 86.9,
+      "cost": 0.4138
+     },
+     {
+      "model": "Inkling",
+      "mean": 87.6,
+      "cdr": 86.0,
+      "cost": 0.0597
+     },
+     {
+      "model": "GPT-5.6 Luna",
+      "mean": 82.2,
+      "cdr": 81.8,
+      "cost": 0.0046
+     },
+     {
+      "model": "GLM-5.3-Flash",
+      "mean": 80.0,
+      "cdr": 78.4,
+      "cost": 0.0025
+     },
+     {
+      "model": "Gemini 3.5 Flash-Lite",
+      "mean": 76.4,
+      "cdr": 74.2,
+      "cost": 0.0109
+     },
+     {
+      "model": "Muse Spark 1.3",
+      "mean": 75.4,
+      "cdr": 84.9,
+      "cost": 0.0231
+     },
+     {
+      "model": "Claude 4.5 Haiku",
+      "mean": 61.0,
+      "cdr": 63.1,
+      "cost": 0.0717
+     },
+     {
+      "model": "Gemma 4 31B",
+      "mean": 55.8,
+      "cdr": 53.8,
+      "cost": 0.0011
+     }
+    ]
+   },
+   "mark": {
+    "type": "point",
+    "filled": true,
+    "size": 90,
+    "color": "#B14E26"
+   },
+   "encoding": {
+    "x": {
+     "field": "mean",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       50,
+       95
+      ],
+      "nice": false
+     },
+     "axis": {
+      "title": "Mean task score (0\u2013100)",
+      "grid": false
+     }
+    },
+    "y": {
+     "field": "cdr",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       50,
+       95
+      ],
+      "nice": false
+     },
+     "axis": {
+      "title": "Correct determination rate (%)",
+      "grid": false
+     }
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "model": "GPT-6 Astra",
+      "mean": 89.9,
+      "cdr": 89.8,
+      "cost": 0.1302
+     },
+     {
+      "model": "Claude Fable 5.1",
+      "mean": 88.4,
+      "cdr": 86.9,
+      "cost": 0.4138
+     },
+     {
+      "model": "Inkling",
+      "mean": 87.6,
+      "cdr": 86.0,
+      "cost": 0.0597
+     },
+     {
+      "model": "GPT-5.6 Luna",
+      "mean": 82.2,
+      "cdr": 81.8,
+      "cost": 0.0046
+     },
+     {
+      "model": "GLM-5.3-Flash",
+      "mean": 80.0,
+      "cdr": 78.4,
+      "cost": 0.0025
+     },
+     {
+      "model": "Gemini 3.5 Flash-Lite",
+      "mean": 76.4,
+      "cdr": 74.2,
+      "cost": 0.0109
+     },
+     {
+      "model": "Muse Spark 1.3",
+      "mean": 75.4,
+      "cdr": 84.9,
+      "cost": 0.0231
+     },
+     {
+      "model": "Claude 4.5 Haiku",
+      "mean": 61.0,
+      "cdr": 63.1,
+      "cost": 0.0717
+     },
+     {
+      "model": "Gemma 4 31B",
+      "mean": 55.8,
+      "cdr": 53.8,
+      "cost": 0.0011
+     }
+    ]
+   },
+   "mark": {
+    "type": "text",
+    "align": "left",
+    "dx": 8,
+    "dy": -2,
+    "fontSize": 11,
+    "color": "#1A1614"
+   },
+   "encoding": {
+    "x": {
+     "field": "mean",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       50,
+       95
+      ],
+      "nice": false
+     }
+    },
+    "y": {
+     "field": "cdr",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       50,
+       95
+      ],
+      "nice": false
+     }
+    },
+    "text": {
+     "field": "model"
+    }
+   },
+   "transform": [
+    {
+     "filter": "datum.model != 'Inkling' && datum.model != 'Claude Fable 5.1'"
+    }
+   ]
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "x": 93,
+      "y": 93.5,
+      "t": "verdict rate = mean score"
+     }
+    ]
+   },
+   "mark": {
+    "type": "text",
+    "align": "right",
+    "fontSize": 10,
+    "color": "#635A4C"
+   },
+   "encoding": {
+    "x": {
+     "field": "x",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       50,
+       95
+      ],
+      "nice": false
+     }
+    },
+    "y": {
+     "field": "y",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       50,
+       95
+      ],
+      "nice": false
+     }
+    },
+    "text": {
+     "field": "t"
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "model": "GPT-6 Astra",
+      "mean": 89.9,
+      "cdr": 89.8,
+      "cost": 0.1302
+     },
+     {
+      "model": "Claude Fable 5.1",
+      "mean": 88.4,
+      "cdr": 86.9,
+      "cost": 0.4138
+     },
+     {
+      "model": "Inkling",
+      "mean": 87.6,
+      "cdr": 86.0,
+      "cost": 0.0597
+     },
+     {
+      "model": "GPT-5.6 Luna",
+      "mean": 82.2,
+      "cdr": 81.8,
+      "cost": 0.0046
+     },
+     {
+      "model": "GLM-5.3-Flash",
+      "mean": 80.0,
+      "cdr": 78.4,
+      "cost": 0.0025
+     },
+     {
+      "model": "Gemini 3.5 Flash-Lite",
+      "mean": 76.4,
+      "cdr": 74.2,
+      "cost": 0.0109
+     },
+     {
+      "model": "Muse Spark 1.3",
+      "mean": 75.4,
+      "cdr": 84.9,
+      "cost": 0.0231
+     },
+     {
+      "model": "Claude 4.5 Haiku",
+      "mean": 61.0,
+      "cdr": 63.1,
+      "cost": 0.0717
+     },
+     {
+      "model": "Gemma 4 31B",
+      "mean": 55.8,
+      "cdr": 53.8,
+      "cost": 0.0011
+     }
+    ]
+   },
+   "mark": {
+    "type": "text",
+    "align": "left",
+    "dx": 8,
+    "dy": 10,
+    "fontSize": 11,
+    "color": "#1A1614"
+   },
+   "encoding": {
+    "x": {
+     "field": "mean",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       50,
+       95
+      ],
+      "nice": false
+     }
+    },
+    "y": {
+     "field": "cdr",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       50,
+       95
+      ],
+      "nice": false
+     }
+    },
+    "text": {
+     "field": "model"
+    }
+   },
+   "transform": [
+    {
+     "filter": "datum.model == 'Inkling'"
+    }
+   ]
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "model": "GPT-6 Astra",
+      "mean": 89.9,
+      "cdr": 89.8,
+      "cost": 0.1302
+     },
+     {
+      "model": "Claude Fable 5.1",
+      "mean": 88.4,
+      "cdr": 86.9,
+      "cost": 0.4138
+     },
+     {
+      "model": "Inkling",
+      "mean": 87.6,
+      "cdr": 86.0,
+      "cost": 0.0597
+     },
+     {
+      "model": "GPT-5.6 Luna",
+      "mean": 82.2,
+      "cdr": 81.8,
+      "cost": 0.0046
+     },
+     {
+      "model": "GLM-5.3-Flash",
+      "mean": 80.0,
+      "cdr": 78.4,
+      "cost": 0.0025
+     },
+     {
+      "model": "Gemini 3.5 Flash-Lite",
+      "mean": 76.4,
+      "cdr": 74.2,
+      "cost": 0.0109
+     },
+     {
+      "model": "Muse Spark 1.3",
+      "mean": 75.4,
+      "cdr": 84.9,
+      "cost": 0.0231
+     },
+     {
+      "model": "Claude 4.5 Haiku",
+      "mean": 61.0,
+      "cdr": 63.1,
+      "cost": 0.0717
+     },
+     {
+      "model": "Gemma 4 31B",
+      "mean": 55.8,
+      "cdr": 53.8,
+      "cost": 0.0011
+     }
+    ]
+   },
+   "mark": {
+    "type": "text",
+    "align": "left",
+    "dx": 8,
+    "dy": -9,
+    "fontSize": 11,
+    "color": "#1A1614"
+   },
+   "encoding": {
+    "x": {
+     "field": "mean",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       50,
+       95
+      ],
+      "nice": false
+     }
+    },
+    "y": {
+     "field": "cdr",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       50,
+       95
+      ],
+      "nice": false
+     }
+    },
+    "text": {
+     "field": "model"
+    }
+   },
+   "transform": [
+    {
+     "filter": "datum.model == 'Claude Fable 5.1'"
+    }
+   ]
+  }
+ ],
+ "config": {
+  "view": {
+   "stroke": null
+  }
+ }
+}
